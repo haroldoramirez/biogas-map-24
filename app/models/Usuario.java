@@ -1,0 +1,49 @@
+package models;
+
+import com.avaje.ebean.Model;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class Usuario extends Model {
+
+    /*-------------------------------------------------------------------
+     *				 		     ATTRIBUTES
+     *-------------------------------------------------------------------*/
+
+    @Id
+    @GeneratedValue
+    @JsonIgnore
+    private Long id;
+
+    @Column(nullable = false)
+    private String nome;
+
+    /*-------------------------------------------------------------------
+     *				 		   GETTERS AND SETTERS
+     *-------------------------------------------------------------------*/
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    /*-------------------------------------------------------------------
+     *				 		   UTILS
+     *-------------------------------------------------------------------*/
+}
