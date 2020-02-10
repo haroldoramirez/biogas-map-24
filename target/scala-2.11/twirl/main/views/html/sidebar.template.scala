@@ -104,7 +104,7 @@ Seq[Any](format.raw/*1.1*/("""<div class="sidebar" data-background-color="brown"
 object sidebar extends sidebar_Scope0.sidebar
               /*
                   -- GENERATED --
-                  DATE: Mon Feb 10 17:05:46 BRT 2020
+                  DATE: Mon Feb 10 17:11:14 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/sidebar.scala.html
                   HASH: ad5f45d8a638afa35858b082ebce464afa22e836
                   MATRIX: 831->0|1242->385|1256->391|1298->413|1405->493|1420->499|1463->521|1652->682|1681->683|1755->729|1784->730|2371->1289|2400->1290|2472->1334|2501->1335|2829->1635|2858->1636|2930->1680|2959->1681|3287->1981|3316->1982|3388->2026|3417->2027

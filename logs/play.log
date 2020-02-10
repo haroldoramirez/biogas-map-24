@@ -3569,3 +3569,75 @@ Caused by: java.nio.channels.OverlappingFileLockException: null
 2020-02-10 17:06:06 [INFO] from application in the thread application-akka.actor.default-dispatcher-3 - Creating Pool for datasource 'default'
 2020-02-10 17:06:06 [INFO] from play.api.db.DefaultDBApi in the thread application-akka.actor.default-dispatcher-3 - Database [default] connected at jdbc:postgresql://127.0.0.1:5432/biogasmap
 2020-02-10 17:06:06 [INFO] from play.api.Play in the thread application-akka.actor.default-dispatcher-3 - Application started (Dev)
+2020-02-10 17:11:34 [INFO] from application in the thread ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
+2020-02-10 17:11:35 [INFO] from play.api.db.DefaultDBApi in the thread ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:postgresql://127.0.0.1:5432/biogasmap
+2020-02-10 17:11:36 [INFO] from play.api.Play in the thread ForkJoinPool-1-worker-1 - Application started (Dev)
+2020-02-10 17:14:10 [ERROR] from application in the thread New I/O worker #4 - 
+
+! @7en24bd80 - Internal server error, for (GET) [/] ->
+ 
+play.sbt.PlayExceptions$UnexpectedException: Unexpected exception[OverlappingFileLockException: null]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:51) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.11.jar:na]
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.11.jar:na]
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:324) ~[na:na]
+	at play.runsupport.Reloader$$anon$3.run(Reloader.scala:44) ~[na:na]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_242]
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:40) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:322) ~[na:na]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:113) ~[play-server_2.11-2.4.11.jar:2.4.11]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:111) ~[play-server_2.11-2.4.11.jar:2.4.11]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.11.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.11.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) ~[akka-actor_2.11-2.3.13.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.11.jar:na]
+Caused by: java.nio.channels.OverlappingFileLockException: null
+	at sun.nio.ch.SharedFileLockTable.checkList(FileLockTable.java:255) ~[na:1.8.0_242]
+	at sun.nio.ch.SharedFileLockTable.add(FileLockTable.java:152) ~[na:1.8.0_242]
+	at sun.nio.ch.FileChannelImpl.lock(FileChannelImpl.java:1062) ~[na:1.8.0_242]
+	at java.nio.channels.FileChannel.lock(FileChannel.java:1053) ~[na:1.8.0_242]
+	at org.jetbrains.plugins.scala.indices.protocol.sbt.Locking$.lock(Locking.scala:23) ~[na:na]
+	at org.jetbrains.plugins.scala.indices.protocol.sbt.Locking$FileLockingExt$.lock$extension(Locking.scala:51) ~[na:na]
+	at org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin$$anonfun$perConfig$2.apply(SbtIntellijIndicesPlugin.scala:62) ~[na:na]
+	at org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin$$anonfun$perConfig$2.apply(SbtIntellijIndicesPlugin.scala:47) ~[na:na]
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[scala-library-2.11.11.jar:na]
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40) ~[na:na]
+	at sbt.std.Transform$$anon$4.work(System.scala:63) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:228) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:228) ~[na:na]
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17) ~[na:na]
+	at sbt.Execute.work(Execute.scala:237) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:228) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:228) ~[na:na]
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159) ~[na:na]
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28) ~[na:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_242]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_242]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_242]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_242]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_242]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_242]
+2020-02-10 17:14:12 [INFO] from application in the thread application-akka.actor.default-dispatcher-8 - Shutting down connection pool.
+2020-02-10 17:14:13 [INFO] from application in the thread application-akka.actor.default-dispatcher-8 - Creating Pool for datasource 'default'
+2020-02-10 17:14:13 [INFO] from play.api.db.DefaultDBApi in the thread application-akka.actor.default-dispatcher-8 - Database [default] connected at jdbc:postgresql://127.0.0.1:5432/biogasmap
+2020-02-10 17:14:13 [INFO] from play.api.Play in the thread application-akka.actor.default-dispatcher-8 - Application started (Dev)
+2020-02-10 17:15:50 [INFO] from application in the thread application-akka.actor.default-dispatcher-9 - Shutting down connection pool.
+2020-02-10 17:15:50 [INFO] from application in the thread application-akka.actor.default-dispatcher-9 - Creating Pool for datasource 'default'
+2020-02-10 17:15:50 [INFO] from play.api.db.DefaultDBApi in the thread application-akka.actor.default-dispatcher-9 - Database [default] connected at jdbc:postgresql://127.0.0.1:5432/biogasmap
+2020-02-10 17:15:50 [INFO] from play.api.Play in the thread application-akka.actor.default-dispatcher-9 - Application started (Dev)
+2020-02-10 17:20:00 [INFO] from application in the thread application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
+2020-02-10 17:20:00 [INFO] from application in the thread application-akka.actor.default-dispatcher-3 - Creating Pool for datasource 'default'
+2020-02-10 17:20:00 [INFO] from play.api.db.DefaultDBApi in the thread application-akka.actor.default-dispatcher-3 - Database [default] connected at jdbc:postgresql://127.0.0.1:5432/biogasmap
+2020-02-10 17:20:01 [INFO] from play.api.Play in the thread application-akka.actor.default-dispatcher-3 - Application started (Dev)
