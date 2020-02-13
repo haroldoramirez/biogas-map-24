@@ -34,7 +34,7 @@ libraryDependencies ++= Seq(
   "org.julienrf" %% "play-jsmessages" % "2.0.0",
   "commons-io" % "commons-io" % "2.4",
   "commons-validator" % "commons-validator" % "1.5.1",
-  "org.mindrot" % "jbcrypt" % "0.3m",
+  "org.mindrot" % "jbcrypt" % "0.4",
   "eu.bitwalker" % "UserAgentUtils" % "1.20",
   "it.innove" % "play2-pdf" % "1.4.0",
   "com.adrianhurt" % "play-bootstrap_2.11" % "1.0-P24-B3"

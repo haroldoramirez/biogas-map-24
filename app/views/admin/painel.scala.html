@@ -1,0 +1,115 @@
+@import views.html.admin.main
+
+@(usuario: Usuario)
+
+@main(Messages("app.title") + " | Dashboard") {
+
+    <div class="col-md-12">
+        <div class="page-header header-biogas">
+            <div class="btn-group btn-breadcrumb pull-right">
+                <a href="@routes.AdminController.painel()" class="btn btn-default"><i class="fa fa-home"></i></a>
+                <a disabled class="btn btn-default">Início</a>
+            </div>
+            <h1 class="font-style"><i class="fa fa-home" aria-hidden="true"></i> Dashboard</h1>
+        </div>
+    </div>
+
+    @*Painel Amarelo*@
+    <div class="col-lg-3 col-md-6">
+        <div class="panel panel-yellow">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <i class="fa fa-newspaper-o fa-5x"></i>
+                    </div>
+                    <div class="col-xs-9 text-right">
+                        <div class="huge">9876</div>
+                        <div>Notícias Registradas</div>
+                    </div>
+                </div>
+            </div>
+            <a href="">
+                <div class="panel-footer">
+                    <span class="pull-left">Mais Detalhes</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+    @*Painel Vermelho*@
+    <div class="col-lg-3 col-md-6">
+        <div class="panel panel-red">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <i class="fa fa-video-camera fa-5x"></i>
+                    </div>
+                    <div class="col-xs-9 text-right">
+                        <div class="huge">9876</div>
+                        <div>Vídeos Registrados</div>
+                    </div>
+                </div>
+            </div>
+            <a href="">
+                <div class="panel-footer">
+                    <span class="pull-left">Mais Detalhes</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    @*Painel Azul*@
+    <div class="col-lg-3 col-md-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <i class="fa fa-file-text fa-5x"></i>
+                    </div>
+                    <div class="col-xs-9 text-right">
+                        <div class="huge">987</div>
+                        <div>Publicações Registradas</div>
+                    </div>
+                </div>
+            </div>
+            <a href="">
+                <div class="panel-footer">
+                    <span class="pull-left">Mais Detalhes</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    @*Painel Azul*@
+    <div class="col-lg-3 col-md-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <i class="fa fa-leanpub fa-5x"></i>
+                    </div>
+                    <div class="col-xs-9 text-right">
+                        <div class="huge">654</div>
+                        <div>Avaliações Registradas</div>
+                    </div>
+                </div>
+            </div>
+            <a href="">
+                <div class="panel-footer">
+                    <span class="pull-left">Mais Detalhes</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+}

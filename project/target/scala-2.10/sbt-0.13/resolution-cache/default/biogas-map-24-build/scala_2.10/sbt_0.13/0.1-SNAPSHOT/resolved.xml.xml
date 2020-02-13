@@ -4,7 +4,7 @@
 		module="biogas-map-24-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20200210165526"
+		publication="20200213084304"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

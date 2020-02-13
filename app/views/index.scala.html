@@ -1,0 +1,69 @@
+@(usuario : Usuario)
+@lang() = @{Http.Context.current().lang().code()}
+@agente() = @{request().getHeader(Http.HeaderNames.USER_AGENT)}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="MAPA">
+    <meta name="apple-mobile-web-app-title" content="MAPA">
+
+    <title>@Messages("app.title") | CIBiogás</title>
+
+    <link rel="icon" sizes="192x192" href="@routes.Assets.versioned("images//ministerios/favicon-mapa.ico")">
+    <link rel="apple-touch-icon-precomposed" href="@routes.Assets.versioned("images/ministerios/favicon-mapa.ico")">
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/ministerios/favicon-mapa.ico")">
+
+    @styles()
+
+</head>
+<body>
+@*Inicio do layout MDL*@
+<div class="mdl-layout cib-layout mdl-js-layout mdl-layout--fixed-header">
+
+    @*Menu Superior*@
+    <header class="mdl-layout__header mdl-color--deep-green-cibiogas mdl-color-text--white">
+        <div class="mdl-layout__header-row">
+            <div class="esconde-celular">
+                <img class="top-menu-imagem-centro" src="@routes.Assets.versioned("images/cibiogas-branco.png")">
+            </div>
+            <div class="mdl-layout-spacer"></div>
+            <div class="esconde-celular text-center"><strong>BIOGASMAP<br></strong></div>
+            <div class="mdl-layout-spacer"></div>
+            <div>
+                <img class="card-image-top-menu" src="@routes.Assets.versioned("images/logos-producao-mapa.png")">
+            </div>
+        </div>
+    </header>
+    @*Fim menu superior*@
+
+    @sidebar()
+
+    @*Inicio conteudo*@
+    <index class="mdl-layout__content mdl-color--grey-100">
+        <section>
+            <div id="mapa" tabindex="0">
+                <div id="popup" class="ol-popup">
+                    <!-- Botao fechar o popup -->
+                    <a id="popup-closer" class="ol-popup-closer"></a>
+                    <!-- Conteudo do popup -->
+                    <div id="popup-content"></div>
+                </div>
+            </div>
+            <div id="mousePosition"></div>
+            <div class="esconde-celular" id="legenda"></div>
+        </section>
+    </index>
+    @*FIM conteudo*@
+
+</div>
+@*Fim do layout MDL*@
+
+@javascripts()
+</body>
+</html>

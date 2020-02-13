@@ -2,6 +2,13 @@
 [0m[[0mdebug[0m] [0m	(/home/haroldo/projetos/biogas-map-24/conf/logback.xml,/home/haroldo/projetos/biogas-map-24/target/scala-2.11/classes/logback.xml)[0m
 [0m[[0mdebug[0m] [0m	(/home/haroldo/projetos/biogas-map-24/conf/application.conf,/home/haroldo/projetos/biogas-map-24/target/scala-2.11/classes/application.conf)[0m
 [0m[[0mdebug[0m] [0m	(/home/haroldo/projetos/biogas-map-24/conf/evolutions,/home/haroldo/projetos/biogas-map-24/target/scala-2.11/classes/evolutions)[0m
+[0m[[0mdebug[0m] [0m	(/home/haroldo/projetos/biogas-map-24/conf/messages.en,/home/haroldo/projetos/biogas-map-24/target/scala-2.11/classes/messages.en)[0m
+[0m[[0mdebug[0m] [0m	(/home/haroldo/projetos/biogas-map-24/conf/email.conf,/home/haroldo/projetos/biogas-map-24/target/scala-2.11/classes/email.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/haroldo/projetos/biogas-map-24/conf/messages.pt,/home/haroldo/projetos/biogas-map-24/target/scala-2.11/classes/messages.pt)[0m
+[0m[[0mdebug[0m] [0m	(/home/haroldo/projetos/biogas-map-24/conf/messages.es,/home/haroldo/projetos/biogas-map-24/target/scala-2.11/classes/messages.es)[0m
 [0m[[0mdebug[0m] [0m	(/home/haroldo/projetos/biogas-map-24/conf/routes,/home/haroldo/projetos/biogas-map-24/target/scala-2.11/classes/routes)[0m
 [0m[[0mdebug[0m] [0m	(/home/haroldo/projetos/biogas-map-24/conf/evolutions/default,/home/haroldo/projetos/biogas-map-24/target/scala-2.11/classes/evolutions/default)[0m
+[0m[[0mdebug[0m] [0m	(/home/haroldo/projetos/biogas-map-24/conf/evolutions/default/4.sql,/home/haroldo/projetos/biogas-map-24/target/scala-2.11/classes/evolutions/default/4.sql)[0m
 [0m[[0mdebug[0m] [0m	(/home/haroldo/projetos/biogas-map-24/conf/evolutions/default/1.sql,/home/haroldo/projetos/biogas-map-24/target/scala-2.11/classes/evolutions/default/1.sql)[0m
+[0m[[0mdebug[0m] [0m	(/home/haroldo/projetos/biogas-map-24/conf/evolutions/default/3.sql,/home/haroldo/projetos/biogas-map-24/target/scala-2.11/classes/evolutions/default/3.sql)[0m
+[0m[[0mdebug[0m] [0m	(/home/haroldo/projetos/biogas-map-24/conf/evolutions/default/2.sql,/home/haroldo/projetos/biogas-map-24/target/scala-2.11/classes/evolutions/default/2.sql)[0m

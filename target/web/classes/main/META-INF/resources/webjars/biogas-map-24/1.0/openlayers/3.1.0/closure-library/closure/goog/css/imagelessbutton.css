@@ -143,7 +143,7 @@
 /* IE6 hacks.  This is the only place inner-box is used. */
 * html .goog-imageless-button-inner-box {
   /* Give the element inline-block behavior so that the shadow appears.
-   * The main requirement is to give the element layout without having the side
+   * The index requirement is to give the element layout without having the side
    * effect of taking up a full line. */
   display: inline;
   /* Allow the shadow to show through, overriding position:relative from the

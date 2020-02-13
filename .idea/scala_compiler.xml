@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="biogas-map-24_1915" />
-    <profile name="sbt 2" modules="agil,biogas-map-24">
+    <profile name="sbt 1" modules="biogas-map-24_3170" />
+    <profile name="sbt 2" modules="biogas-map-24">
       <option name="deprecationWarnings" value="true" />
       <option name="uncheckedWarnings" value="true" />
       <parameters>
