@@ -6,7 +6,7 @@ function getTodasAsUnidades() {
 	map.removeLayer(layerMedio);		
 	map.removeLayer(layerGrande);	
 	
-	$.get(context + "/getTodasAsUnidades", function(data) {
+	$.get("/getTodasAsUnidades", function(data) {
         
     	//Recebe os dados do back-end
 		unidades = data;
@@ -80,7 +80,7 @@ function getUnidadesByFilters(validadorSituacao,
 	map.removeLayer(layerMedio);		
 	map.removeLayer(layerGrande);
 	
-	$.get( context + "/getUnidadesFiltradas", {
+	$.get("/getUnidadesFiltradas", {
 		
 		//Parametros para o back-end
 		validadorSituacao:						validadorSituacao,

@@ -29,62 +29,240 @@ class sidebar extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,For
       {
 
 
-Seq[Any](format.raw/*1.1*/("""<div class="sidebar" data-background-color="brown" data-active-color="danger">
-    <!--
-        Tip 1: you can change the color of the sidebar's background using: data-background-color="white | brown"
-        Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
-    -->
-    <div class="logo">
-        <a href=""""),_display_(/*7.19*/routes/*7.25*/.HomeController.main()),format.raw/*7.47*/("""" class="simple-text logo-mini">
-            AG
-        </a>
+Seq[Any](format.raw/*1.1*/("""<!-- 	inicio menu gaveta -->
+<div class="mdl-layout__drawer">
+    <nav class="cib-navigation mdl-navigation mdl-color--white">
 
-        <a href=""""),_display_(/*11.19*/routes/*11.25*/.HomeController.main()),format.raw/*11.47*/("""" class="simple-text logo-normal">
-            Agil
-        </a>
-    </div>
-    <div class="sidebar-wrapper">
-        <ul class="nav">
-            <li ng-class=""""),format.raw/*17.27*/("""{"""),format.raw/*17.28*/("""active:$state.current.activetab == 'principal'"""),format.raw/*17.74*/("""}"""),format.raw/*17.75*/("""">
-                <a ui-sref="principal">
-                    <i class="ti-calendar"></i>
-                    <p>Principal</p>
-                </a>
-            </li>
-            <li>
-                <a data-toggle="collapse" href="#dashboardOverview">
-                    <i class="ti-panel"></i>
-                    <p>Collapse
-                        <b class="caret"></b>
-                    </p>
-                </a>
-                <div class="collapse" id="dashboardOverview">
-                    <ul class="nav">
-                        <li ng-class=""""),format.raw/*32.39*/("""{"""),format.raw/*32.40*/("""active:$state.current.activetab == 'pagina1'"""),format.raw/*32.84*/("""}"""),format.raw/*32.85*/("""">
-                            <a ui-sref="pagina1">
-                                <span class="sidebar-mini">P1</span>
-                                <span class="sidebar-normal">Pagina 1</span>
-                            </a>
-                        </li>
-                        <li ng-class=""""),format.raw/*38.39*/("""{"""),format.raw/*38.40*/("""active:$state.current.activetab == 'pagina2'"""),format.raw/*38.84*/("""}"""),format.raw/*38.85*/("""">
-                            <a ui-sref="pagina2">
-                                <span class="sidebar-mini">P2</span>
-                                <span class="sidebar-normal">Pagina 2</span>
-                            </a>
-                        </li>
-                        <li ng-class=""""),format.raw/*44.39*/("""{"""),format.raw/*44.40*/("""active:$state.current.activetab == 'pagina3'"""),format.raw/*44.84*/("""}"""),format.raw/*44.85*/("""">
-                            <a ui-sref="pagina3">
-                                <span class="sidebar-mini">P3</span>
-                                <span class="sidebar-normal">Pagina 3</span>
-                            </a>
-                        </li>
-                    </ul>
+        <!-- TITULO -->
+        <div class="sections-menu">
+            <h2 class="mdl-card__supporting-text mdl-card__subtitle-text sidebar-title">Filtros</h2>
+        </div>
+        <!-- TITULO -->
+
+        <!-- INICIO LOCALIZACAO -->
+        <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+            <p class="mdl-card__supporting-text mdl-card__subtitle-text sidebar-section-title">Localização</p>
+            <select id="estados" name="estado-id" class="form-control input-sm">
+                <option value="0">Selecione o Estado</option>
+                <c:forEach items="$"""),format.raw/*16.36*/("""{"""),format.raw/*16.37*/("""estados"""),format.raw/*16.44*/("""}"""),format.raw/*16.45*/("""" var="estado" varStatus="contador">
+                    <option value="$"""),format.raw/*17.37*/("""{"""),format.raw/*17.38*/("""estado.id"""),format.raw/*17.47*/("""}"""),format.raw/*17.48*/("""">$"""),format.raw/*17.51*/("""{"""),format.raw/*17.52*/("""estado.nome"""),format.raw/*17.63*/("""}"""),format.raw/*17.64*/("""</option>
+                </c:forEach>
+            </select>
+            <div class="separador-invisivel"></div>
+            <select disabled id="municipios" name="unidade.municipio.id" class="form-control input-sm">
+                <option value="0">Selecione o Município</option>
+            </select>
+        </div>
+        <!-- FIM LOCALIZACAO -->
+
+        <div class="separador"></div>
+
+        <!-- INICIO TECNOLOGIA -->
+        <div class="sections-menu">
+            <p class="mdl-card__supporting-text mdl-card__subtitle-text sidebar-section-title">Tecnologias de tratamento dos dejetos</p>
+            <div class="btn-group-wrap">
+                <div class="btn-group" data-toggle="buttons">
+                    <label style="width:94px; display:inline-block;" class="btn btn-xs btn-default sidebar-tecnologia">
+                        <input id="biodigestor" type="checkbox" value="1">Biodigestão
+                    </label>
+                    <label style="width:115px; display:inline-block;" class="btn btn-xs btn-default sidebar-tecnologia">
+                        <input id="compostagem" type="checkbox" value="2">Compostagem
+                    </label>
                 </div>
-            </li>
+            </div>
+        </div>
+        <!-- FIM TECNOLOGIA -->
 
-        </ul>
-    </div>
-</div>"""))
+        <div class="separador"></div>
+
+        <!-- INICIO SECTION PRODUCAO DIARIA -->
+        <div class="sections-menu">
+            <p class="mdl-card__supporting-text mdl-card__subtitle-text sidebar-section-title">Porte</p>
+            <div class="btn-group-wrap">
+                <div class="btn-group" data-toggle="buttons">
+                    <input class="text-center input-sm" type="text" id="escala-valores" readonly="readonly">
+                    <div id="escala" class="slider"></div>
+                </div>
+            </div>
+        </div>
+        <!-- FIM SECTION PRODUCAO DIARIA -->
+
+        <div class="separador"></div>
+
+        <!-- INICIO SECTION SUBSTRATO -->
+        <div class="sections-menu">
+            <p class="mdl-card__supporting-text mdl-card__subtitle-text sidebar-section-title">Situação</p>
+
+            <div class="btn-group-wrap">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label style="width:61px; display:inline-block;" class="btn btn-xs btn-default sidebar-situacao">
+                        <input value="1" id="situacaoOperando" type="checkbox">Operando
+                    </label>
+                    <label style="width:75px; display:inline-block;" class="btn btn-xs btn-default sidebar-situacao">
+                        <input value="2" id="situacaoConstruindo" type="checkbox">Construindo
+                    </label>
+                    <label style="width:75px; display:inline-block;" class="btn btn-xs btn-default sidebar-situacao">
+                        <input value="3" id="situacaoReformando" type="checkbox">Reformando
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- FIM SECTION SITUACAO -->
+
+        <div class="separador"></div>
+
+        <!-- INICIO ANO -->
+        <div class="sections-menu">
+            <p class="mdl-card__supporting-text mdl-card__subtitle-text sidebar-section-title">Início da operação com uso energético do biogás</p>
+            <div class="btn-group-wrap">
+                <div class="btn-group" data-toggle="buttons">
+                    <label style="width:40px; display:inline-block;" class="btn btn-xs btn-default sidebar-operacao">
+                        <input id="ano2003" type="checkbox" value="2003">2003
+                    </label>
+                    <label style="width:41px; display:inline-block;" class="btn btn-xs btn-default sidebar-operacao">
+                        <input id="ano2004" type="checkbox" value="2004">2004
+                    </label>
+                    <label style="width:41px; display:inline-block;" class="btn btn-xs btn-default sidebar-operacao">
+                        <input id="ano2005" type="checkbox" value="2005">2005
+                    </label>
+                    <label style="width:41px; display:inline-block;" class="btn btn-xs btn-default sidebar-operacao">
+                        <input id="ano2006" type="checkbox" value="2006">2006
+                    </label>
+                    <label style="width:41px; display:inline-block;" class="btn btn-xs btn-default sidebar-operacao">
+                        <input id="ano2007" type="checkbox" value="2007">2007
+                    </label>
+                </div>
+                <div class="btn-group" data-toggle="buttons">
+                    <label style="width:40px; display:inline-block;" class="btn btn-xs btn-default sidebar-operacao">
+                        <input id="ano2008" type="checkbox" value="2008">2008
+                    </label>
+                    <label style="width:41px; display:inline-block;" class="btn btn-xs btn-default sidebar-operacao">
+                        <input id="ano2009" type="checkbox" value="2009">2009
+                    </label>
+                    <label style="width:41px; display:inline-block;" class="btn btn-xs btn-default sidebar-operacao">
+                        <input id="ano2010" type="checkbox" value="2010">2010
+                    </label>
+                    <label style="width:41px; display:inline-block;" class="btn btn-xs btn-default sidebar-operacao">
+                        <input id="ano2011" type="checkbox" value="2011">2011
+                    </label>
+                    <label style="width:41px; display:inline-block;" class="btn btn-xs btn-default sidebar-operacao">
+                        <input id="ano2012" type="checkbox" value="2012">2012
+                    </label>
+                </div>
+                <div class="btn-group" data-toggle="buttons">
+                    <label style="width:40px; display:inline-block;" class="btn btn-xs btn-default sidebar-operacao">
+                        <input id="ano2013" type="checkbox" value="2013">2013
+                    </label>
+                    <label style="width:41px; display:inline-block;" class="btn btn-xs btn-default sidebar-operacao">
+                        <input id="ano2014" type="checkbox" value="2014">2014
+                    </label>
+                    <label style="width:40px; display:inline-block;" class="btn btn-xs btn-default sidebar-operacao">
+                        <input id="ano2015" type="checkbox" value="2015">2015
+                    </label>
+                    <label style="width:41px; display:inline-block;" class="btn btn-xs btn-default sidebar-operacao">
+                        <input id="ano2016" type="checkbox" value="2016">2016
+                    </label>
+                    <label style="width:41px; display:inline-block;" class="btn btn-xs btn-default sidebar-operacao">
+                        <input id="ano2017" type="checkbox" value="2017">2017
+                    </label>
+                </div>
+                <div class="btn-group" data-toggle="buttons">
+
+                    <label style="width:41px; display:inline-block;" class="btn btn-xs btn-default sidebar-operacao">
+                        <input id="ano2018" type="checkbox" value="2018">2018
+                    </label>
+                    <label style="width:41px; display:inline-block;" class="btn btn-xs btn-default sidebar-operacao">
+                        <input id="ano2019" type="checkbox" value="2019">2019
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- FIM ANO -->
+
+        <div class="separador"></div>
+
+        <!-- INICIO SECTION SUBSTRATO -->
+        <div class="sections-menu">
+
+            <p class="mdl-card__supporting-text mdl-card__subtitle-text sidebar-section-title">Atividade produtiva fonte dos dejetos</p>
+
+            <div class="btn-group-wrap">
+                <div id="toggle_bovinocultura" class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label id="lbl_bovinocultura" style="width:212px;display:inline-block;" class="btn btn-xs btn-default sidebar-substrato">
+                        <input value="3" id="bovinocultura" type="checkbox" autocomplete="off"><abbr style="cursor:default;" title="Bovinocultura de Leite ou Corte">Bovinocultura de Leite ou Corte</abbr>
+                    </label>
+                </div>
+            </div>
+
+            <div class="btn-group-wrap">
+                <div id="toggle_SuinoculturaBovinoculturaAvicultura" class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label id="lbl_SuinoculturaBovinoculturaAvicultura" style="width:212px;display:inline-block;" class="btn btn-xs btn-default sidebar-substrato">
+                        <input value="2" id="suinoculturaBovinoculturaAvicultura" type="checkbox" autocomplete="off"><abbr style="cursor:default;" title="Suinocultura, bovinocultura e/ou avicultura">Suino. bovino. e/ou avicultura</abbr>
+                    </label>
+                </div>
+            </div>
+
+            <div class="btn-group-wrap">
+                <div id="toggle_suinoculturaLaticinios" class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label id="lbl_suinocultura" style="width:212px; display:inline-block;" class="btn btn-xs btn-default sidebar-substrato">
+                        <input value="1" id="suinocultura" type="checkbox" autocomplete="off"><abbr style="cursor:default;" title="Suinocultura">Suinocultura</abbr>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- FIM SECTION SUBSTRATO -->
+
+        <div class="separador"></div>
+
+        <!-- INICIO SECTION APLICACAO -->
+        <div class="sections-menu">
+
+            <p class="mdl-card__supporting-text mdl-card__subtitle-text sidebar-section-title">Aplicação do biogás produzido na biodigestão</p>
+
+            <div class="btn-group-wrap">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label style="width:105px; display:inline-block;" class="btn btn-xs btn-default sidebar-aplicacao">
+                        <input value="false" id="aplicacaoTermica" type="checkbox">Térmica
+                    </label>
+                    <label style="width:105px; display:inline-block;" class="btn btn-xs btn-default sidebar-aplicacao">
+                        <input value="false" id="aplicacaoEletrica" type="checkbox">Elétrica
+                    </label>
+                </div>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label style="width:105px; display:inline-block;" class="btn btn-xs btn-default sidebar-aplicacao">
+                        <input value="false" id="aplicacaoMecanica" type="checkbox">Mecânica
+                    </label>
+                    <label style="width:105px; display:inline-block;" class="btn btn-xs btn-default sidebar-situacao">
+                        <input value="false" id="aplicacaoBiometano" type="checkbox">GNV/Biometano
+                    </label>
+                </div>
+            </div>
+
+        </div>
+        <!-- FIM SECTION APLICACAO -->
+
+        <div class="separador"></div>
+
+        <!-- INICIO TECNOLOGIA -->
+        <div class="sections-menu">
+            <p class="mdl-card__supporting-text mdl-card__subtitle-text sidebar-section-title"><b><i class="fa fa-cloud-download" aria-hidden="true"></i> Geração de relatório consolidado</b></p>
+            <div class="col-md-12">
+                <button id="button-clear" class="btn btn-default btn-sm">
+                    <span class="fa fa-eraser" aria-hidden="true"></span> Limpar
+                </button>
+                <a id="btnRelatorioModal" type="button" class="btn btn-primary btn-sm" data-toggle="modal" onclick="abrirModal()">
+                    <span class="fa fa-file-text" aria-hidden="true"></span> Relatório
+                </a>
+            </div>
+        </div>
+        <!-- FIM TECNOLOGIA -->
+
+        <div class="mdl-layout-spacer"></div>
+        <div class="separador-invisivel"></div>
+
+    </nav>
+</div>
+<!--    FIM menu gaveta -->"""))
       }
     }
   }
@@ -104,11 +282,11 @@ Seq[Any](format.raw/*1.1*/("""<div class="sidebar" data-background-color="brown"
 object sidebar extends sidebar_Scope0.sidebar
               /*
                   -- GENERATED --
-                  DATE: Mon Feb 10 17:11:14 BRT 2020
+                  DATE: Thu Feb 13 08:16:14 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/sidebar.scala.html
-                  HASH: ad5f45d8a638afa35858b082ebce464afa22e836
-                  MATRIX: 831->0|1242->385|1256->391|1298->413|1405->493|1420->499|1463->521|1652->682|1681->683|1755->729|1784->730|2371->1289|2400->1290|2472->1334|2501->1335|2829->1635|2858->1636|2930->1680|2959->1681|3287->1981|3316->1982|3388->2026|3417->2027
-                  LINES: 32->1|38->7|38->7|38->7|42->11|42->11|42->11|48->17|48->17|48->17|48->17|63->32|63->32|63->32|63->32|69->38|69->38|69->38|69->38|75->44|75->44|75->44|75->44
+                  HASH: 33329462865c5e1e3811fa601255acb2ec7efa79
+                  MATRIX: 831->0|1608->749|1637->750|1672->757|1701->758|1802->831|1831->832|1868->841|1897->842|1928->845|1957->846|1996->857|2025->858
+                  LINES: 32->1|47->16|47->16|47->16|47->16|48->17|48->17|48->17|48->17|48->17|48->17|48->17|48->17
                   -- GENERATED --
               */
           

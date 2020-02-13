@@ -341,7 +341,7 @@ $("#estados").change( function() {
 			
 	estadoId = $("#estados option:selected").val();
 		
-	$.getJSON( context + "/municipios/estado/" + estadoId,
+	$.getJSON("/municipios/estado/" + estadoId,
 			
 	function(data) {
 		$("#municipios").html("");

@@ -24,9 +24,9 @@ let layerMedio = null;
 let layerGrande = null;
 
 //Pontos do mapa
-let iconPequeno = context + "/img/verde.png";
-let iconMedio = context + "/img/amarelo.png";
-let iconGrande = context + "/img/azul.png";
+let iconPequeno = "/images/verde.png";
+let iconMedio = "/images/amarelo.png";
+let iconGrande = "/images/azul.png";
 
 let overlay = "";
 

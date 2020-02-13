@@ -1,0 +1,14 @@
+{
+  "name": "jquery-csv",
+  "homepage": "https://github.com/evanplaice/jquery-csv",
+  "version": "1.0.8",
+  "_release": "1.0.8",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.8",
+    "commit": "3e44d69f5c917d1f0bc2d58f32cbbb126cf346a8"
+  },
+  "_source": "https://github.com/evanplaice/jquery-csv.git",
+  "_target": "^1.0.8",
+  "_originalSource": "jquery-csv"
+}
