@@ -105,7 +105,7 @@ Seq[Any](format.raw/*3.27*/("""
 object usuarios extends usuarios_Scope0.usuarios_Scope1.usuarios
               /*
                   -- GENERATED --
-                  DATE: Thu Feb 13 14:49:56 BRT 2020
+                  DATE: Thu Feb 13 16:58:29 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/admin/usuarios/usuarios.scala.html
                   HASH: 4910e8c59bae14fbf51a762bcbdd5e3d15f1f5fd
                   MATRIX: 833->32|936->60|959->75|1025->131|1045->143|1204->291|1218->297|1355->57|1383->128|1412->288|1441->404|1470->407|1504->432|1544->434|1574->437|2069->905|2109->929|2149->931|2188->942|2237->964|2253->971|2282->979|2332->1002|2348->1009|2379->1019|2429->1042|2445->1049|2477->1060|2527->1083|2563->1098|2613->1121|2658->1145|2708->1168|2750->1189|2812->1220|2848->1229

@@ -44,7 +44,8 @@ Seq[Any](format.raw/*1.42*/("""
     placeholder=""""),_display_(/*13.19*/placeholder),format.raw/*13.30*/(""""/>
     <span data-toggle="tooltip" data-placement="top" title="Mostrar/Ocultar senha" toggle="#"""),_display_(/*14.94*/field/*14.99*/.id),format.raw/*14.102*/("""" class="fa fa-fw fa-eye field-password-icon toggle-password"></span>
     <span class="help-block pull-right">"""),_display_(/*15.42*/{field.error.map { error => error.message }}),format.raw/*15.86*/("""</span>
-</div>"""))
+</div>
+"""))
       }
     }
   }
@@ -64,9 +65,9 @@ Seq[Any](format.raw/*1.42*/("""
 object senha extends senha_Scope0.senha
               /*
                   -- GENERATED --
-                  DATE: Thu Feb 13 15:12:30 BRT 2020
+                  DATE: Thu Feb 13 17:18:26 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/templates/bootstrap/senha.scala.html
-                  HASH: db0b21bcf50d20f75cfca7a962dbb506b10c39c6
+                  HASH: d2e67f7988a4736680795fae724891de38a11377
                   MATRIX: 771->1|906->41|934->43|984->67|1011->86|1050->88|1090->98|1240->222|1253->227|1276->230|1316->243|1330->248|1356->253|1420->290|1434->295|1475->315|1522->335|1554->346|1678->443|1692->448|1717->451|1855->562|1920->606
                   LINES: 27->1|32->1|34->3|34->3|34->3|34->3|34->3|40->9|40->9|40->9|41->10|41->10|41->10|43->12|43->12|43->12|44->13|44->13|45->14|45->14|45->14|46->15|46->15
                   -- GENERATED --

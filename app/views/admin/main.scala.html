@@ -54,7 +54,7 @@
                                     <span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu" role="menu">
-                                @if(usuario.isAdministrador()) {
+                                @if(usuario.isAdmin()) {
                                    <li class="dropdown-header">Usuário</li>
                                     <span class="label label-danger center-block">@usuario.getEmail</span>
                                     <li role="separator" class="divider"></li>
@@ -70,7 +70,7 @@
                                         class="active" }><a href=""><span class="fa fa-language"></span> Idiomas</a></li>
                                     <li role="separator" class="divider"></li>
                                     <li class="dropdown-header">Sistema</li>
-                                    @if(usuario.isAdministrador()) {
+                                    @if(usuario.isAdmin()) {
                                         <li @if(request.path.contains("/usuario")) {
                                             class="active" }><a href=""><span class="fa fa-users"></span> Usuários</a></li>
                                          <li @if(request.path.contains("/admin/adicionais/api")) {

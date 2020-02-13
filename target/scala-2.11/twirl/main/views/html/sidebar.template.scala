@@ -282,7 +282,7 @@ Seq[Any](format.raw/*1.1*/("""<!-- 	inicio menu gaveta -->
 object sidebar extends sidebar_Scope0.sidebar
               /*
                   -- GENERATED --
-                  DATE: Thu Feb 13 14:39:41 BRT 2020
+                  DATE: Thu Feb 13 16:58:29 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/sidebar.scala.html
                   HASH: 33329462865c5e1e3811fa601255acb2ec7efa79
                   MATRIX: 831->0|1608->749|1637->750|1672->757|1701->758|1802->831|1831->832|1868->841|1897->842|1928->845|1957->846|1996->857|2025->858

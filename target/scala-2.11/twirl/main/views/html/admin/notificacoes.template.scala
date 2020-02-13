@@ -57,7 +57,7 @@ Seq[Any](_display_(/*1.2*/if(!flash.isEmpty)/*1.20*/ {_display_(Seq[Any](format.
 object notificacoes extends notificacoes_Scope0.notificacoes
               /*
                   -- GENERATED --
-                  DATE: Thu Feb 13 15:47:22 BRT 2020
+                  DATE: Thu Feb 13 16:58:29 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/admin/notificacoes.scala.html
                   HASH: 1524e983303cc2375968773005c5ca5fe4a8c947
                   MATRIX: 847->1|873->19|912->21|943->26|1012->69|1051->93|1090->95|1128->106|1177->129|1200->132|1228->133|1260->139|1283->142|1323->156|1336->161|1365->170|1403->181|1447->195|1478->200

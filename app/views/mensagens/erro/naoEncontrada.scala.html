@@ -38,6 +38,10 @@
                             <a class="btn" href="@routes.Application.index()">@Messages("app.home.title")</a>
                         </div>
                     </div>
+                    <div class="row">
+                        <h3>@Messages("notfound.page.or"):</h3>
+                        <gcse:search></gcse:search>
+                    </div>
                     @views.html.admin.footer()
                 </div>
             </div>

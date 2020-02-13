@@ -78,7 +78,7 @@ Seq[Any](format.raw/*3.20*/("""
 object api extends api_Scope0.api_Scope1.api
               /*
                   -- GENERATED --
-                  DATE: Thu Feb 13 16:41:35 BRT 2020
+                  DATE: Thu Feb 13 16:58:29 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/admin/api.scala.html
                   HASH: 81e5bbb905cbe4bb70943950fb07b13e80e5355b
                   MATRIX: 803->32|916->50|944->53|1008->109|1047->111|1077->115|1222->233|1238->240|1269->250|1642->596|1658->603|1702->626|2012->909|2028->916|2067->934

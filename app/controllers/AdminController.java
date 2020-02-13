@@ -1,7 +1,7 @@
 package controllers;
 
-import autenticadores.AdminAutenticado;
-import autenticadores.UsuarioAutenticado;
+import secured.SecuredAdmin;
+import secured.SecuredUser;
 import daos.UsuarioDAO;
 import models.Usuario;
 import play.mvc.Controller;
@@ -12,7 +12,7 @@ import views.html.admin.usuarios.usuarios;
 import javax.inject.Inject;
 import java.util.List;
 
-@Security.Authenticated(AdminAutenticado.class)
+@Security.Authenticated(SecuredAdmin.class)
 public class AdminController extends Controller {
 
     public static final String AUTH = "AUTH";
@@ -25,14 +25,14 @@ public class AdminController extends Controller {
         return ok(usuarios.render(listaDeUsuarios));
     }
 
-    @Security.Authenticated(UsuarioAutenticado.class)
+    @Security.Authenticated(SecuredUser.class)
     public Result painel() {
         String codigo = session(AUTH);
         Usuario usuario = usuarioDAO.comToken(codigo).get();
         return ok(views.html.admin.painel.render(usuario));
     }
 
-    @Security.Authenticated(UsuarioAutenticado.class)
+    @Security.Authenticated(SecuredUser.class)
     public Result paginaApi() {
         String codigo = session(AUTH);
         Usuario usuario = usuarioDAO.comToken(codigo).get();

@@ -11,6 +11,46 @@ GET     /admin/painel                           controllers.AdminController.pain
 
 GET     /admin/adicionais/api                   controllers.AdminController.paginaApi
 
+# Adicionais Usuario telas
+GET     /cadastro                                                       controllers.UsuarioController.telaCadastro()
+GET     /admin/adicionais/usuario/novo/                                 controllers.UsuarioController.telaNovo()
+GET     /usuario/cadastrado                                             controllers.UsuarioController.telaCadastrado()
+GET     /usuario/reset                                                  controllers.UsuarioController.telaReset()
+GET     /admin/adicionais/usuario/editar/:id                            controllers.UsuarioController.telaEditar(id:Long)
+GET		/admin/adicionais/usuario/detalhe/:id				            controllers.UsuarioController.telaDetalhe(id:Long)
+GET     /admin/adicionais/usuario/lista/todos                           controllers.UsuarioController.telaLista(p:Int ?= 0, s ?= "nome", o ?= "asc", f ?= "")
+
+# Usuario Servicos
+POST    /usuario                                                        controllers.UsuarioController.inserir()
+GET     /current                                                        controllers.UsuarioController.autenticado()
+GET     /usuario/confirma/:email/:confirmaToken                         controllers.UsuarioController.confirma(email, confirmaToken)
+POST    /admin/adicionais/usuario/editar/:id                            controllers.UsuarioController.editar(id:Long)
+GET     /admin/adicionais/usuario/:id                                   controllers.UsuarioController.buscaPorId(id:Long)
+GET     /admin/adicionais/usuarios/filtro/:filtro                       controllers.UsuarioController.filtra(filtro:String)
+POST	/admin/adicionais/usuario/:id/remover		                    controllers.UsuarioController.remover(id:Long)
+GET	    /admin/adicionais/usuario/:id/enviarToken		                controllers.UsuarioController.enviarToken(id:Long)
+GET	    /admin/adicionais/usuario/:id/confirma		                    controllers.UsuarioController.confirmaAdmin(id:Long)
+GET	    /admin/adicionais/usuario/:id/bloqueia		                    controllers.UsuarioController.bloquear(id:Long)
+GET	    /admin/adicionais/usuario/:id/desbloqueia		                controllers.UsuarioController.desbloquear(id:Long)
+POST    /admin/adicionais/usuario                                       controllers.UsuarioController.inserirAdmin()
+GET	    /admin/adicionais/usuario/exportar/		                        controllers.UsuarioController.exportar()
+
+# Adicionais Logs
+GET     /admin/adicionais/log/:id/remover                               controllers.LogController.remover(id:Long)
+GET		/admin/adicionais/log/detalhe/:id				                controllers.LogController.telaDetalhe(id:Long)
+GET     /admin/adicionais/log/lista/todos                               controllers.LogController.telaLista(p:Int ?= 0, s ?= "dataCadastro", o ?= "desc", f ?= "")
+
+# Adicionais Categorias
+GET     /admin/adicionais/categoria/novo/                               controllers.CategoriaController.telaNovo()
+GET		/admin/adicionais/categoria/detalhe/:id				            controllers.CategoriaController.telaDetalhe(id:Long)
+GET     /admin/adicionais/categoria/editar/:id                          controllers.CategoriaController.telaEditar(id:Long)
+GET     /admin/adicionais/categoria/lista/todos                         controllers.CategoriaController.telaLista(p:Int ?= 0, s ?= "nome", o ?= "asc", f ?= "")
+
+# Categoria Servicos
+POST    /admin/categoria                                                controllers.CategoriaController.inserir()
+POST	/admin/categoria/:id/remover                                    controllers.CategoriaController.remover(id:Long)
+POST    /admin/categoria/editar/:id                                     controllers.CategoriaController.editar(id:Long)
+
 POST    /usuario/novo                           controllers.UsuarioController.salvaNovoUsuario
 GET     /usuario/novo                           controllers.UsuarioController.formularioDeNovoUsuario
 GET     /usuario/confirma/:email/:codigo        controllers.UsuarioController.confirmaUsuario(email, codigo)

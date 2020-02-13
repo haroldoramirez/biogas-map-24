@@ -56,7 +56,7 @@ Seq[Any](format.raw/*1.1*/("""<div class="row">
 object footer extends footer_Scope0.footer
               /*
                   -- GENERATED --
-                  DATE: Thu Feb 13 15:07:52 BRT 2020
+                  DATE: Thu Feb 13 16:58:29 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/admin/footer.scala.html
                   HASH: 546f90073eaedfc830d6f7427bf0f3e47a33e302
                   MATRIX: 835->0|994->133|1057->176|1117->209|1132->215|1173->235|1297->332|1339->353
