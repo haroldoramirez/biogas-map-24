@@ -17,6 +17,7 @@ import javax.inject.Inject;
 import java.util.Date;
 import java.util.Formatter;
 import java.util.Optional;
+import views.html.admin.categorias.list;
 
 import static play.data.Form.form;
 

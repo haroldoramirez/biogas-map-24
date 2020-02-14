@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/haroldo/projetos/biogas-map-24/conf/routes
-// @DATE:Thu Feb 13 17:36:41 BRT 2020
+// @DATE:Fri Feb 14 09:21:13 BRT 2020
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -13,14 +13,14 @@ import _root_.play.libs.F
 // @LINE:7
 package controllers {
 
-  // @LINE:63
+  // @LINE:71
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:63
+    // @LINE:71
     def versioned(file:Asset): Call = {
       implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[Asset]].unbind("file", file))
@@ -102,6 +102,39 @@ package controllers {
     def telaDetalhe(id:Long): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "admin/adicionais/categoria/detalhe/" + implicitly[PathBindable[Long]].unbind("id", id))
+    }
+  
+  }
+
+  // @LINE:63
+  class ReverseSenhaController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:68
+    def runReset(token:String): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "reset/" + implicitly[PathBindable[String]].unbind("token", dynamicString(token)))
+    }
+  
+    // @LINE:64
+    def resetSenha(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "usuario/reset/senha")
+    }
+  
+    // @LINE:67
+    def reset(token:String): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "reset/" + implicitly[PathBindable[String]].unbind("token", dynamicString(token)))
+    }
+  
+    // @LINE:63
+    def runPassword(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "reset/senha")
     }
   
   }

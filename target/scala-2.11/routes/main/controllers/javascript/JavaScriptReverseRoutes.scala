@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/haroldo/projetos/biogas-map-24/conf/routes
-// @DATE:Thu Feb 13 17:36:41 BRT 2020
+// @DATE:Fri Feb 14 09:21:13 BRT 2020
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -15,7 +15,7 @@ import _root_.play.libs.F
 package controllers.javascript {
   import ReverseRouteContext.empty
 
-  // @LINE:63
+  // @LINE:71
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -23,7 +23,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:63
+    // @LINE:71
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -149,6 +149,56 @@ package controllers.javascript {
       """
         function(id) {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "admin/adicionais/categoria/detalhe/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id)})
+        }
+      """
+    )
+  
+  }
+
+  // @LINE:63
+  class ReverseSenhaController(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:68
+    def runReset: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SenhaController.runReset",
+      """
+        function(token) {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "reset/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("token", encodeURIComponent(token))})
+        }
+      """
+    )
+  
+    // @LINE:64
+    def resetSenha: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SenhaController.resetSenha",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "usuario/reset/senha"})
+        }
+      """
+    )
+  
+    // @LINE:67
+    def reset: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SenhaController.reset",
+      """
+        function(token) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "reset/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("token", encodeURIComponent(token))})
+        }
+      """
+    )
+  
+    // @LINE:63
+    def runPassword: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SenhaController.runPassword",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "reset/senha"})
         }
       """
     )

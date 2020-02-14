@@ -7544,3 +7544,10 @@ Caused by: java.nio.channels.OverlappingFileLockException: null
 2020-02-13 16:54:36 [INFO] from application in the thread application-akka.actor.default-dispatcher-14 - Creating Pool for datasource 'default'
 2020-02-13 16:54:36 [INFO] from play.api.db.DefaultDBApi in the thread application-akka.actor.default-dispatcher-14 - Database [default] connected at jdbc:postgresql://127.0.0.1:5432/biogasmap
 2020-02-13 16:54:36 [INFO] from play.api.Play in the thread application-akka.actor.default-dispatcher-14 - Application started (Dev)
+2020-02-14 09:33:32 [INFO] from application in the thread ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
+2020-02-14 09:33:33 [INFO] from play.api.db.DefaultDBApi in the thread ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:postgresql://127.0.0.1:5432/biogasmap
+2020-02-14 09:33:38 [INFO] from play.api.Play in the thread ForkJoinPool-1-worker-1 - Application started (Dev)
+2020-02-14 09:33:42 [INFO] from application in the thread application-akka.actor.default-dispatcher-4 - Shutting down connection pool.
+2020-02-14 09:33:43 [INFO] from application in the thread application-akka.actor.default-dispatcher-4 - Creating Pool for datasource 'default'
+2020-02-14 09:33:43 [INFO] from play.api.db.DefaultDBApi in the thread application-akka.actor.default-dispatcher-4 - Database [default] connected at jdbc:postgresql://127.0.0.1:5432/biogasmap
+2020-02-14 09:33:43 [INFO] from play.api.Play in the thread application-akka.actor.default-dispatcher-4 - Application started (Dev)

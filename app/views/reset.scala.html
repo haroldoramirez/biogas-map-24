@@ -50,11 +50,11 @@
                                 <button data-loading-text="Loading..." id="btnReset" type="submit" class="btn">@Messages("login.page.button.reset")</button>
                             }
                             <br>
-                            <p class="text-center">@Messages("register.page.ask") <a href="@routes.LoginController.telaLogin()">@Messages("login.page.signin.title")</a>.</p>
+                            <p class="text-center">@Messages("register.page.ask") <a href="@routes.UsuarioController.formularioDeLogin()">@Messages("login.page.signin.title")</a>.</p>
                         </div>
                     </div>
                 </div>
-                @footer()
+                @views.html.admin.footer()
             </div>
         </div>
     </div>

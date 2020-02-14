@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/haroldo/projetos/biogas-map-24/conf/routes
-// @DATE:Thu Feb 13 17:36:41 BRT 2020
+// @DATE:Fri Feb 14 09:21:13 BRT 2020
 
 
 package router {

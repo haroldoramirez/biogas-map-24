@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/haroldo/projetos/biogas-map-24/conf/routes
-// @DATE:Thu Feb 13 17:36:41 BRT 2020
+// @DATE:Fri Feb 14 09:21:13 BRT 2020
 
 package router
 
@@ -17,7 +17,7 @@ import _root_.play.libs.F
 class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:7
-  Application_5: controllers.Application,
+  Application_6: controllers.Application,
   // @LINE:9
   AdminController_0: controllers.AdminController,
   // @LINE:15
@@ -27,14 +27,16 @@ class Routes(
   // @LINE:44
   CategoriaController_1: controllers.CategoriaController,
   // @LINE:63
-  Assets_4: controllers.Assets,
+  SenhaController_4: controllers.SenhaController,
+  // @LINE:71
+  Assets_5: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
 
    @javax.inject.Inject()
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:7
-    Application_5: controllers.Application,
+    Application_6: controllers.Application,
     // @LINE:9
     AdminController_0: controllers.AdminController,
     // @LINE:15
@@ -44,14 +46,16 @@ class Routes(
     // @LINE:44
     CategoriaController_1: controllers.CategoriaController,
     // @LINE:63
-    Assets_4: controllers.Assets
-  ) = this(errorHandler, Application_5, AdminController_0, UsuarioController_3, LogController_2, CategoriaController_1, Assets_4, "/")
+    SenhaController_4: controllers.SenhaController,
+    // @LINE:71
+    Assets_5: controllers.Assets
+  ) = this(errorHandler, Application_6, AdminController_0, UsuarioController_3, LogController_2, CategoriaController_1, SenhaController_4, Assets_5, "/")
 
   import ReverseRouteContext.empty
 
   def withPrefix(prefix: String): Routes = {
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, Application_5, AdminController_0, UsuarioController_3, LogController_2, CategoriaController_1, Assets_4, prefix)
+    new Routes(errorHandler, Application_6, AdminController_0, UsuarioController_3, LogController_2, CategoriaController_1, SenhaController_4, Assets_5, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -99,6 +103,10 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.UsuarioController.formularioDeLogin"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.UsuarioController.autenticar"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """logout""", """controllers.UsuarioController.logout"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """reset/senha""", """controllers.SenhaController.runPassword()"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """usuario/reset/senha""", """controllers.SenhaController.resetSenha()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """reset/$token<[^/]+>""", """controllers.SenhaController.reset(token:String)"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """reset/$token<[^/]+>""", """controllers.SenhaController.runReset(token:String)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -112,7 +120,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix)))
   )
   private[this] lazy val controllers_Application_index0_invoker = createInvoker(
-    Application_5.index,
+    Application_6.index,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Application",
@@ -789,11 +797,79 @@ class Routes(
   )
 
   // @LINE:63
-  private[this] lazy val controllers_Assets_versioned40_route = Route("GET",
+  private[this] lazy val controllers_SenhaController_runPassword40_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("reset/senha")))
+  )
+  private[this] lazy val controllers_SenhaController_runPassword40_invoker = createInvoker(
+    SenhaController_4.runPassword(),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.SenhaController",
+      "runPassword",
+      Nil,
+      "POST",
+      """ Senha""",
+      this.prefix + """reset/senha"""
+    )
+  )
+
+  // @LINE:64
+  private[this] lazy val controllers_SenhaController_resetSenha41_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("usuario/reset/senha")))
+  )
+  private[this] lazy val controllers_SenhaController_resetSenha41_invoker = createInvoker(
+    SenhaController_4.resetSenha(),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.SenhaController",
+      "resetSenha",
+      Nil,
+      "POST",
+      """""",
+      this.prefix + """usuario/reset/senha"""
+    )
+  )
+
+  // @LINE:67
+  private[this] lazy val controllers_SenhaController_reset42_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("reset/"), DynamicPart("token", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_SenhaController_reset42_invoker = createInvoker(
+    SenhaController_4.reset(fakeValue[String]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.SenhaController",
+      "reset",
+      Seq(classOf[String]),
+      "GET",
+      """ Reseta a senha""",
+      this.prefix + """reset/$token<[^/]+>"""
+    )
+  )
+
+  // @LINE:68
+  private[this] lazy val controllers_SenhaController_runReset43_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("reset/"), DynamicPart("token", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_SenhaController_runReset43_invoker = createInvoker(
+    SenhaController_4.runReset(fakeValue[String]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.SenhaController",
+      "runReset",
+      Seq(classOf[String]),
+      "POST",
+      """""",
+      this.prefix + """reset/$token<[^/]+>"""
+    )
+  )
+
+  // @LINE:71
+  private[this] lazy val controllers_Assets_versioned44_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned40_invoker = createInvoker(
-    Assets_4.versioned(fakeValue[String], fakeValue[Asset]),
+  private[this] lazy val controllers_Assets_versioned44_invoker = createInvoker(
+    Assets_5.versioned(fakeValue[String], fakeValue[Asset]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Assets",
@@ -811,7 +887,7 @@ class Routes(
     // @LINE:7
     case controllers_Application_index0_route(params) =>
       call { 
-        controllers_Application_index0_invoker.call(Application_5.index)
+        controllers_Application_index0_invoker.call(Application_6.index)
       }
   
     // @LINE:9
@@ -1049,9 +1125,33 @@ class Routes(
       }
   
     // @LINE:63
-    case controllers_Assets_versioned40_route(params) =>
+    case controllers_SenhaController_runPassword40_route(params) =>
+      call { 
+        controllers_SenhaController_runPassword40_invoker.call(SenhaController_4.runPassword())
+      }
+  
+    // @LINE:64
+    case controllers_SenhaController_resetSenha41_route(params) =>
+      call { 
+        controllers_SenhaController_resetSenha41_invoker.call(SenhaController_4.resetSenha())
+      }
+  
+    // @LINE:67
+    case controllers_SenhaController_reset42_route(params) =>
+      call(params.fromPath[String]("token", None)) { (token) =>
+        controllers_SenhaController_reset42_invoker.call(SenhaController_4.reset(token))
+      }
+  
+    // @LINE:68
+    case controllers_SenhaController_runReset43_route(params) =>
+      call(params.fromPath[String]("token", None)) { (token) =>
+        controllers_SenhaController_runReset43_invoker.call(SenhaController_4.runReset(token))
+      }
+  
+    // @LINE:71
+    case controllers_Assets_versioned44_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned40_invoker.call(Assets_4.versioned(path, file))
+        controllers_Assets_versioned44_invoker.call(Assets_5.versioned(path, file))
       }
   }
 }

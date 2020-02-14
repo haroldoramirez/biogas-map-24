@@ -14,6 +14,7 @@ import play.mvc.Security;
 import javax.inject.Inject;
 import java.util.Calendar;
 import java.util.Optional;
+import views.html.admin.logs.list;
 
 public class LogController extends Controller {
 

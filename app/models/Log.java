@@ -1,10 +1,13 @@
 package models;
 
+import com.avaje.ebean.PagedList;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import java.util.Calendar;
+import java.util.List;
 
 @Entity
 public class Log extends BaseModel {
@@ -71,5 +74,36 @@ public class Log extends BaseModel {
 
     public void setDataCadastro(Calendar dataCadastro) {
         this.dataCadastro = dataCadastro;
+    }
+
+    /*-------------------------------------------------------------------
+     *	UTILS
+     *-------------------------------------------------------------------*/
+
+    public static Finder<Long, Log> find = new Finder<>(Log.class);
+
+    /**
+     * Return a page
+     *
+     * @param page Page to display
+     * @param pageSize Number of publicacao per page
+     * @param sortBy log erro property used for sorting
+     * @param order Sort order (either or asc or desc)
+     * @param filter Filter applied on the name column
+     */
+    public static PagedList<Log> page(int page, int pageSize, String sortBy, String order, String filter) {
+        return
+                find.where()
+                        .ilike("mensagem", "%" + filter + "%")
+                        .orderBy(sortBy + " " + order)
+                        .findPagedList(page, pageSize);
+    }
+
+    /**
+     * Return a list of last log registered
+     *
+     */
+    public static List<Log> last() {
+        return find.where().orderBy("dataCadastro desc").setMaxRows(5).findList();
     }
 }
