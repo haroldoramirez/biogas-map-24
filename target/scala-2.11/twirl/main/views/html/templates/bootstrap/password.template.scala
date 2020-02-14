@@ -60,7 +60,7 @@ Seq[Any](format.raw/*1.81*/("""
 object password extends password_Scope0.password
               /*
                   -- GENERATED --
-                  DATE: Thu Feb 13 17:18:26 BRT 2020
+                  DATE: Fri Feb 14 09:36:48 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/templates/bootstrap/password.scala.html
                   HASH: 11321571bc57b4ad4de48ca96cfa063e5f47dccb
                   MATRIX: 791->1|965->80|993->82|1123->186|1136->191|1159->194|1198->207|1211->212|1236->217|1300->254|1314->259|1355->279|1402->299|1434->310

@@ -64,7 +64,7 @@ Seq[Any](format.raw/*1.81*/("""
 object textoSenha extends textoSenha_Scope0.textoSenha
               /*
                   -- GENERATED --
-                  DATE: Thu Feb 13 17:18:24 BRT 2020
+                  DATE: Fri Feb 14 09:36:48 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/templates/bootstrap/textoSenha.scala.html
                   HASH: 48b7d57385d5d226cc487129cc31875caac0bfac
                   MATRIX: 795->1|969->80|997->82|1047->106|1074->125|1113->127|1153->137|1199->157|1212->162|1235->165|1295->199|1320->204|1348->205|1518->349|1531->354|1554->357|1597->374|1610->379|1635->384|1707->429|1721->434|1762->454|1813->478|1845->489|1973->590|1988->595|2013->598|2144->702|2209->746

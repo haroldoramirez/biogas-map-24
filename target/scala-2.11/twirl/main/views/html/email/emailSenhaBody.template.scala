@@ -62,7 +62,7 @@ Seq[Any](format.raw/*1.35*/("""
 object emailSenhaBody extends emailSenhaBody_Scope0.emailSenhaBody
               /*
                   -- GENERATED --
-                  DATE: Fri Feb 14 09:16:57 BRT 2020
+                  DATE: Fri Feb 14 09:36:48 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/email/emailSenhaBody.scala.html
                   HASH: 4f42f8b327afb793848169544dbcf8f4f8907c6e
                   MATRIX: 777->1|905->34|932->35|1021->99|1062->120|1091->123|1106->130|1134->138|1172->151|1233->192|1303->235|1327->238|1375->260|1416->280|1450->287|1492->308

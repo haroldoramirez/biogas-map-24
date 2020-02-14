@@ -40,6 +40,41 @@ import java.util.*;
 
 public class UsuarioController extends Controller {
 
+    static private LogController logController = new LogController();
+
+    private static final String COMMA_DELIMITER = ",";
+    private static final String NEW_LINE_SEPARATOR = "\n";
+    private static final String FILE_HEADER = "Nome,Email";
+
+    /**
+     * metodo responsavel por modificar o titulo do arquivo
+     *
+     * @param str identificador
+     * @return a string formatada
+     */
+    private static String formatarTitulo(String str) {
+        return Normalizer.normalize(str, Normalizer.Form.NFD)
+                .replaceAll("[^\\p{ASCII}]", "")
+                .replaceAll(" ", "-")
+                .replaceAll(",", "-")
+                .replaceAll("!", "")
+                .replaceAll("/", "-")
+                .replaceAll("[?]", "")
+                .toLowerCase();
+    }
+
+    private String mensagem;
+    private String tipoMensagem;
+
+    @Inject
+    private MailerClient mailerClient;
+
+    static private DynamicForm form = Form.form();
+
+    private Form<Usuario> usuarioForm = Form.form(Usuario.class);
+
+    private String senha_original;
+
     public static final String AUTH = "AUTH";
 
     static private DynamicForm formularios = Form.form();
@@ -56,6 +91,12 @@ public class UsuarioController extends Controller {
     @Inject
     private TokenDeCadastroDAO tokenDeCadastroDAO;
 
+    private Optional<Usuario> usuarioAtual() {
+        String email = session().get("email");
+        Optional<Usuario> possivelUsuario = usuarioDAO.comEmail(email);
+        return possivelUsuario;
+    }
+
     public Result formularioDeNovoUsuario() {
         Form<Usuario> formulario = formularios.form(Usuario.class);
         return ok(views.html.admin.usuarios.formularioDeNovoUsuario.render(formulario));
@@ -69,8 +110,8 @@ public class UsuarioController extends Controller {
             return badRequest(views.html.admin.usuarios.formularioDeNovoUsuario.render(formulario));
         }
         Usuario usuario = formulario.get();
-        String senhaCrupto = Crypt.sha1(usuario.getSenha());
-        usuario.setSenha(senhaCrupto);
+        String senhaCrypto = Crypt.sha1(usuario.getSenha());
+        usuario.setSenha(senhaCrypto);
         usuario.save();
         TokenDeCadastro token = new TokenDeCadastro(usuario);
         token.save();
@@ -145,47 +186,6 @@ public class UsuarioController extends Controller {
 
     private void insereUsuarioNaSessao(Usuario usuario) {
         session(AUTH, usuario.getToken().getCodigo());
-    }
-
-    static private LogController logController = new LogController();
-
-    private static final String COMMA_DELIMITER = ",";
-    private static final String NEW_LINE_SEPARATOR = "\n";
-    private static final String FILE_HEADER = "Nome,Email";
-
-    /**
-     * metodo responsavel por modificar o titulo do arquivo
-     *
-     * @param str identificador
-     * @return a string formatada
-     */
-    private static String formatarTitulo(String str) {
-        return Normalizer.normalize(str, Normalizer.Form.NFD)
-                .replaceAll("[^\\p{ASCII}]", "")
-                .replaceAll(" ", "-")
-                .replaceAll(",", "-")
-                .replaceAll("!", "")
-                .replaceAll("/", "-")
-                .replaceAll("[?]", "")
-                .toLowerCase();
-    }
-
-    private String mensagem;
-    private String tipoMensagem;
-
-    @Inject
-    private MailerClient mailerClient;
-
-    static private DynamicForm form = Form.form();
-
-    private Form<Usuario> usuarioForm = Form.form(Usuario.class);
-
-    private String senha_original;
-
-    private Optional<Usuario> usuarioAtual() {
-        String email = session().get("email");
-        Optional<Usuario> possivelUsuario = usuarioDAO.comEmail(email);
-        return possivelUsuario;
     }
 
     /**
@@ -926,6 +926,9 @@ public class UsuarioController extends Controller {
                 return badRequest(views.html.mensagens.usuario.mensagens.render(mensagem, tipoMensagem));
             }
 
+            TokenDaApi tokenDaApi = new TokenDaApi(usuario);
+            tokenDaApi.save();
+            usuario.setToken(tokenDaApi);
             usuario.setVerificado(true);
             usuario.update();
 

@@ -236,7 +236,7 @@ public class Usuario extends BaseModel {
      * @return A list of level names in sorted order.
      */
     public static List<String> getListaPapeis() {
-        String[] nameArray = {"USUARIO", "GERENTE", "ADMINISTRADOR"};
+        String[] nameArray = {"USUARIO", "SUPERVISOR", "GERENTE", "ADMINISTRADOR"};
         return Arrays.asList(nameArray);
     }
 

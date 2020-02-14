@@ -103,7 +103,7 @@ Seq[Any](format.raw/*1.21*/("""
 object emailSenhaAlteradaBody extends emailSenhaAlteradaBody_Scope0.emailSenhaAlteradaBody
               /*
                   -- GENERATED --
-                  DATE: Fri Feb 14 09:16:57 BRT 2020
+                  DATE: Fri Feb 14 09:36:48 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/email/emailSenhaAlteradaBody.scala.html
                   HASH: 2c0b13e4b42d3751dcb5593a06398868db52113f
                   MATRIX: 786->1|900->20|927->21|1016->85|1056->105|1089->112|1130->133|1673->648|1726->679|2622->1547|2665->1568|2696->1571|2713->1578|2743->1586|2991->1807|3062->1857|3122->1890|3160->1907|3193->1913|3209->1920|3239->1929|3303->1966|3353->1995|3386->2001|3402->2008|3432->2017|3851->2409|3892->2429|3926->2436|3968->2457

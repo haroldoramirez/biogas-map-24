@@ -72,7 +72,7 @@
                                     <li class="dropdown-header">Sistema</li>
                                     @if(usuario.isAdmin()) {
                                         <li @if(request.path.contains("/usuario")) {
-                                            class="active" }><a href=""><span class="fa fa-users"></span> Usuários</a></li>
+                                            class="active" }><a href="@routes.UsuarioController.telaLista()"><span class="fa fa-users"></span> Usuários</a></li>
                                          <li @if(request.path.contains("/admin/adicionais/api")) {
                                             class="active" }><a href="@routes.AdminController.paginaApi"><span class="fa fa-cloud"></span> Api</a></li>
                                     }

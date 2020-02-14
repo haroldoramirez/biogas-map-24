@@ -172,7 +172,7 @@ Seq[Any](format.raw/*1.35*/("""
 object emailRespConfirmacaoBody extends emailRespConfirmacaoBody_Scope0.emailRespConfirmacaoBody
               /*
                   -- GENERATED --
-                  DATE: Fri Feb 14 09:16:57 BRT 2020
+                  DATE: Fri Feb 14 09:36:48 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/email/emailRespConfirmacaoBody.scala.html
                   HASH: 2c1f99ceff880ac4f17787056f02b7cfee3d3e5a
                   MATRIX: 797->1|925->34|952->35|1143->200|1184->221|1212->222|3745->2727|3788->2748|4744->3676|4787->3697|4818->3700|4835->3707|4865->3715|5112->3934|5176->3976|6467->5239|6492->5242|7306->6028|7331->6031|7362->6034|7423->6073|8588->7209|8641->7239

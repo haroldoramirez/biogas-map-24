@@ -7551,3 +7551,775 @@ Caused by: java.nio.channels.OverlappingFileLockException: null
 2020-02-14 09:33:43 [INFO] from application in the thread application-akka.actor.default-dispatcher-4 - Creating Pool for datasource 'default'
 2020-02-14 09:33:43 [INFO] from play.api.db.DefaultDBApi in the thread application-akka.actor.default-dispatcher-4 - Database [default] connected at jdbc:postgresql://127.0.0.1:5432/biogasmap
 2020-02-14 09:33:43 [INFO] from play.api.Play in the thread application-akka.actor.default-dispatcher-4 - Application started (Dev)
+2020-02-14 09:37:19 [INFO] from application in the thread ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
+2020-02-14 09:37:19 [INFO] from play.api.db.DefaultDBApi in the thread ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:postgresql://127.0.0.1:5432/biogasmap
+2020-02-14 09:37:20 [INFO] from play.api.Play in the thread ForkJoinPool-1-worker-1 - Application started (Dev)
+2020-02-14 09:38:21 [INFO] from application in the thread application-akka.actor.default-dispatcher-5 - Shutting down connection pool.
+2020-02-14 09:38:21 [INFO] from application in the thread application-akka.actor.default-dispatcher-5 - Creating Pool for datasource 'default'
+2020-02-14 09:38:21 [INFO] from play.api.db.DefaultDBApi in the thread application-akka.actor.default-dispatcher-5 - Database [default] connected at jdbc:postgresql://127.0.0.1:5432/biogasmap
+2020-02-14 09:38:22 [INFO] from play.api.Play in the thread application-akka.actor.default-dispatcher-5 - Application started (Dev)
+2020-02-14 09:38:36 [INFO] from application in the thread application-akka.actor.default-dispatcher-6 - Arquivo CSV criado com sucesso!
+2020-02-14 09:39:49 [INFO] from application in the thread application-akka.actor.default-dispatcher-10 - mock implementation, send email
+2020-02-14 09:39:49 [INFO] from application in the thread application-akka.actor.default-dispatcher-10 - subject: Biogasmap - Confirme seu email
+2020-02-14 09:39:49 [INFO] from application in the thread application-akka.actor.default-dispatcher-10 - from: Biogasmap CIBiogás <biblioteca@cibiogas.org>
+2020-02-14 09:39:49 [INFO] from application in the thread application-akka.actor.default-dispatcher-10 - bodyHtml: 
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Biogasmap - CIBIOGÁS</title>
+    </head>
+    <body style="margin: 0; padding: 0; min-width: 100%!important;" bgcolor="#f6f8f1">
+        <table width="100%" bgcolor="#f6f8f1" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td>
+                        <!--[if (gte mso 9)|(IE)]>
+            <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td>
+                      <![endif]-->
+                    <table bgcolor="#ffffff" style="width: 100%; max-width: 600px;" align="center" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td bgcolor="#cfd8dc" style="padding: 40px 30px 20px 30px">
+                                <table width="70" align="left" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td height="70" style="padding: 0 20px 20px 0;">
+                                            <img style="height: auto;" src="https://gallery.mailchimp.com/e348220cdbefe0755a59e3be0/images/34f00adf-3b93-471a-a745-e1795deaac9f.png" width="70" height="70" border="0" alt="icon"/>
+                                        </td>
+                                    </tr>
+                                </table>
+                        <!--[if (gte mso 9)|(IE)]>
+                        <table width="425" align="left" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td>
+                        <![endif]-->
+                                <table align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 425px;">
+                                    <tr>
+                                        <td height="70">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td style="padding: 0 0 0 3px; font-size: 15px; color: #153643; font-family: sans-serif; letter-spacing: 10px;">CIBIOGÁS</td>
+                                                </tr>
+                                                <tr>
+                                                        <!--h1-->
+                                                    <td style="padding: 5px 0 0 0;font-size: 33px; line-height: 38px; font-weight: bold; color: #153643; font-family: sans-serif;">Biogasmap</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 30px 30px 30px 30px; border-bottom: 1px solid #f2eeed;">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td style="padding: 0 0 15px 0; font-size: 24px; line-height: 28px; font-weight: bold; color: #153643; font-family: sans-serif;">Olá, supervisor</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-size: 16px; line-height: 22px; color: #153643; font-family: sans-serif;">Parece que você acabou de realizar um registro na nossa Biblioteca Digital do CIBiogás. Se você fez, para completar o processo de registro, basta clicar no link abaixo, ou copie e cole no seu navegador.</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 30px 30px 30px 30px; border-bottom: 1px solid #f2eeed;">
+                            <!--[if (gte mso 9)|(IE)]>
+                        <table width="380" align="left" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td>
+                            <![endif]-->
+                                <table align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 425px;">
+                                    <tr>
+                                        <td>
+                                            <table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                        <!--bodycopy-->
+                                                    <td style="font-size: 16px; line-height: 22px; color: #153643; font-family: sans-serif;">
+                                                        <textarea rows="4" style="width: 100%;" readonly>https://null/biblioteca/usuario/confirma/supervisor@cibiogas.org/2FFBD1780A9337998E97BC161FFFF81C046837E8</textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 20px 0 0 0;">
+                                                        <table bgcolor="#f58634" border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td style="text-align: center; font-size: 18px; font-family: sans-serif; font-weight: bold; padding: 0 30px 0 30px;" height="45">
+                                                                    <a type="button" style="color: #ffffff; text-decoration: none;" href="https://null/biblioteca/usuario/confirma/supervisor@cibiogas.org/2FFBD1780A9337998E97BC161FFFF81C046837E8">Ativar conta</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 20px 30px 15px 30px;" bgcolor="#383838">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td align="center" style="font-family: sans-serif; font-size: 14px; color: #ffffff;">&reg; Centro Internacional de Enegias Renováveis - Biogás, 2017<br/></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                        <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            <![endif]-->
+        </table>
+        </td>
+        </tr>
+        </table>
+    </body>
+</html>
+2020-02-14 09:39:49 [INFO] from application in the thread application-akka.actor.default-dispatcher-10 - to: supervisor@cibiogas.org
+2020-02-14 09:40:15 [ERROR] from play.core.server.netty.PlayDefaultUpstreamHandler in the thread application-akka.actor.default-dispatcher-17 - Cannot invoke the action
+java.lang.NullPointerException: null
+	at controllers.UsuarioController.insereUsuarioNaSessao(UsuarioController.java:147) ~[classes/:2.4.11]
+	at controllers.UsuarioController.autenticar(UsuarioController.java:124) ~[classes/:2.4.11]
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$39$$anonfun$apply$39.apply(Routes.scala:1118) ~[classes/:na]
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$39$$anonfun$apply$39.apply(Routes.scala:1118) ~[classes/:na]
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:136) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:127) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:70) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.GlobalSettings$1.call(GlobalSettings.java:67) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:94) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:94) ~[play_2.11-2.4.11.jar:2.4.11]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.11.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.11.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70) ~[play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.4.11.jar:2.4.11]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.11.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:494) ~[scala-library-2.11.11.jar:na]
+	at play.core.j.JavaAction.apply(JavaAction.scala:94) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:105) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:105) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:104) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:103) ~[play_2.11-2.4.11.jar:2.4.11]
+	at scala.Option.map(Option.scala:146) ~[scala-library-2.11.11.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:103) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:96) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:524) ~[play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:524) ~[play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:560) ~[play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:560) ~[play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:537) ~[play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:537) ~[play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.11.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.11.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) [akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) [akka-actor_2.11-2.3.13.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.11.jar:na]
+2020-02-14 09:40:15 [ERROR] from application in the thread application-akka.actor.default-dispatcher-17 - 
+
+! @7eo2p33od - Internal server error, for (POST) [/login] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:265) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:191) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:179) [play_2.11-2.4.11.jar:2.4.11]
+	at play.core.j.JavaGlobalSettingsAdapter.play$core$j$JavaGlobalSettingsAdapter$$super$onError(JavaGlobalSettingsAdapter.scala:36) [play_2.11-2.4.11.jar:2.4.11]
+	at play.core.j.JavaGlobalSettingsAdapter$$anonfun$onError$2.apply(JavaGlobalSettingsAdapter.scala:36) [play_2.11-2.4.11.jar:2.4.11]
+	at play.core.j.JavaGlobalSettingsAdapter$$anonfun$onError$2.apply(JavaGlobalSettingsAdapter.scala:36) [play_2.11-2.4.11.jar:2.4.11]
+	at scala.Option.getOrElse(Option.scala:121) [scala-library-2.11.11.jar:na]
+	at play.core.j.JavaGlobalSettingsAdapter.onError(JavaGlobalSettingsAdapter.scala:36) [play_2.11-2.4.11.jar:2.4.11]
+	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:94) [play_2.11-2.4.11.jar:2.4.11]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:277) [play-netty-server_2.11-2.4.11.jar:2.4.11]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:273) [play-netty-server_2.11-2.4.11.jar:2.4.11]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:346) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:345) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36) [scala-library-2.11.11.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.executeScheduled(Execution.scala:109) [play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:71) [play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:44) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:252) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:157) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.11.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) [akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) [akka-actor_2.11-2.3.13.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.11.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at controllers.UsuarioController.insereUsuarioNaSessao(UsuarioController.java:147) ~[classes/:2.4.11]
+	at controllers.UsuarioController.autenticar(UsuarioController.java:124) ~[classes/:2.4.11]
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$39$$anonfun$apply$39.apply(Routes.scala:1118) ~[classes/:na]
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$39$$anonfun$apply$39.apply(Routes.scala:1118) ~[classes/:na]
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:136) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:127) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:70) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.GlobalSettings$1.call(GlobalSettings.java:67) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:94) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:94) ~[play_2.11-2.4.11.jar:2.4.11]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.11.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70) [play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.4.11.jar:2.4.11]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.11.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:494) ~[scala-library-2.11.11.jar:na]
+	at play.core.j.JavaAction.apply(JavaAction.scala:94) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:105) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:105) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:104) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:103) ~[play_2.11-2.4.11.jar:2.4.11]
+	at scala.Option.map(Option.scala:146) [scala-library-2.11.11.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:103) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:96) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:524) ~[play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:524) ~[play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:560) ~[play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:560) ~[play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:537) ~[play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:537) ~[play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.11.jar:na]
+	... 6 common frames omitted
+2020-02-14 09:40:39 [ERROR] from play.core.server.netty.PlayDefaultUpstreamHandler in the thread application-akka.actor.default-dispatcher-14 - Cannot invoke the action
+java.lang.NullPointerException: null
+	at controllers.UsuarioController.insereUsuarioNaSessao(UsuarioController.java:147) ~[classes/:2.4.11]
+	at controllers.UsuarioController.autenticar(UsuarioController.java:124) ~[classes/:2.4.11]
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$39$$anonfun$apply$39.apply(Routes.scala:1118) ~[classes/:na]
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$39$$anonfun$apply$39.apply(Routes.scala:1118) ~[classes/:na]
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:136) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:127) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:70) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.GlobalSettings$1.call(GlobalSettings.java:67) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:94) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:94) ~[play_2.11-2.4.11.jar:2.4.11]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.11.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.11.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70) ~[play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.4.11.jar:2.4.11]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.11.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:494) ~[scala-library-2.11.11.jar:na]
+	at play.core.j.JavaAction.apply(JavaAction.scala:94) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:105) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:105) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:104) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:103) ~[play_2.11-2.4.11.jar:2.4.11]
+	at scala.Option.map(Option.scala:146) ~[scala-library-2.11.11.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:103) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:96) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:524) ~[play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:524) ~[play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:560) ~[play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:560) ~[play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:537) ~[play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:537) ~[play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.11.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.11.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) [akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) [akka-actor_2.11-2.3.13.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.11.jar:na]
+2020-02-14 09:40:39 [ERROR] from application in the thread application-akka.actor.default-dispatcher-14 - 
+
+! @7eo2p4d2j - Internal server error, for (POST) [/login] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:265) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:191) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:179) [play_2.11-2.4.11.jar:2.4.11]
+	at play.core.j.JavaGlobalSettingsAdapter.play$core$j$JavaGlobalSettingsAdapter$$super$onError(JavaGlobalSettingsAdapter.scala:36) [play_2.11-2.4.11.jar:2.4.11]
+	at play.core.j.JavaGlobalSettingsAdapter$$anonfun$onError$2.apply(JavaGlobalSettingsAdapter.scala:36) [play_2.11-2.4.11.jar:2.4.11]
+	at play.core.j.JavaGlobalSettingsAdapter$$anonfun$onError$2.apply(JavaGlobalSettingsAdapter.scala:36) [play_2.11-2.4.11.jar:2.4.11]
+	at scala.Option.getOrElse(Option.scala:121) [scala-library-2.11.11.jar:na]
+	at play.core.j.JavaGlobalSettingsAdapter.onError(JavaGlobalSettingsAdapter.scala:36) [play_2.11-2.4.11.jar:2.4.11]
+	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:94) [play_2.11-2.4.11.jar:2.4.11]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:277) [play-netty-server_2.11-2.4.11.jar:2.4.11]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:273) [play-netty-server_2.11-2.4.11.jar:2.4.11]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:346) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:345) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36) [scala-library-2.11.11.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.executeScheduled(Execution.scala:109) [play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:71) [play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:44) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:252) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:157) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.11.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) [akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) [akka-actor_2.11-2.3.13.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.11.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at controllers.UsuarioController.insereUsuarioNaSessao(UsuarioController.java:147) ~[classes/:2.4.11]
+	at controllers.UsuarioController.autenticar(UsuarioController.java:124) ~[classes/:2.4.11]
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$39$$anonfun$apply$39.apply(Routes.scala:1118) ~[classes/:na]
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$39$$anonfun$apply$39.apply(Routes.scala:1118) ~[classes/:na]
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:136) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:127) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:70) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.GlobalSettings$1.call(GlobalSettings.java:67) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:94) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:94) ~[play_2.11-2.4.11.jar:2.4.11]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.11.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70) [play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.4.11.jar:2.4.11]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.11.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:494) ~[scala-library-2.11.11.jar:na]
+	at play.core.j.JavaAction.apply(JavaAction.scala:94) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:105) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:105) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:104) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:103) ~[play_2.11-2.4.11.jar:2.4.11]
+	at scala.Option.map(Option.scala:146) [scala-library-2.11.11.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:103) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:96) ~[play_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:524) ~[play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:524) ~[play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:560) ~[play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:560) ~[play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:537) ~[play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:537) ~[play-iteratees_2.11-2.4.11.jar:2.4.11]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.11.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.11.jar:na]
+	... 6 common frames omitted
+2020-02-14 09:42:20 [INFO] from application in the thread application-akka.actor.default-dispatcher-37 - Shutting down connection pool.
+2020-02-14 09:42:20 [INFO] from application in the thread application-akka.actor.default-dispatcher-37 - Creating Pool for datasource 'default'
+2020-02-14 09:42:20 [INFO] from play.api.db.DefaultDBApi in the thread application-akka.actor.default-dispatcher-37 - Database [default] connected at jdbc:postgresql://127.0.0.1:5432/biogasmap
+2020-02-14 09:42:20 [INFO] from play.api.Play in the thread application-akka.actor.default-dispatcher-37 - Application started (Dev)
+2020-02-14 09:47:50 [INFO] from application in the thread application-akka.actor.default-dispatcher-11 - Shutting down connection pool.
+2020-02-14 09:47:50 [INFO] from application in the thread application-akka.actor.default-dispatcher-11 - Creating Pool for datasource 'default'
+2020-02-14 09:47:50 [INFO] from play.api.db.DefaultDBApi in the thread application-akka.actor.default-dispatcher-11 - Database [default] connected at jdbc:postgresql://127.0.0.1:5432/biogasmap
+2020-02-14 09:47:54 [INFO] from play.api.Play in the thread application-akka.actor.default-dispatcher-11 - Application started (Dev)
+2020-02-14 09:47:56 [INFO] from application in the thread application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
+2020-02-14 09:47:56 [INFO] from application in the thread application-akka.actor.default-dispatcher-3 - Creating Pool for datasource 'default'
+2020-02-14 09:47:56 [INFO] from play.api.db.DefaultDBApi in the thread application-akka.actor.default-dispatcher-3 - Database [default] connected at jdbc:postgresql://127.0.0.1:5432/biogasmap
+2020-02-14 09:47:56 [INFO] from play.api.Play in the thread application-akka.actor.default-dispatcher-3 - Application started (Dev)
+2020-02-14 09:48:31 [INFO] from application in the thread application-akka.actor.default-dispatcher-7 - mock implementation, send email
+2020-02-14 09:48:31 [INFO] from application in the thread application-akka.actor.default-dispatcher-7 - subject: Biogasmap - Confirme seu email
+2020-02-14 09:48:31 [INFO] from application in the thread application-akka.actor.default-dispatcher-7 - from: Biogasmap CIBiogás <biblioteca@cibiogas.org>
+2020-02-14 09:48:31 [INFO] from application in the thread application-akka.actor.default-dispatcher-7 - bodyHtml: 
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Biogasmap - CIBIOGÁS</title>
+    </head>
+    <body style="margin: 0; padding: 0; min-width: 100%!important;" bgcolor="#f6f8f1">
+        <table width="100%" bgcolor="#f6f8f1" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td>
+                        <!--[if (gte mso 9)|(IE)]>
+            <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td>
+                      <![endif]-->
+                    <table bgcolor="#ffffff" style="width: 100%; max-width: 600px;" align="center" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td bgcolor="#cfd8dc" style="padding: 40px 30px 20px 30px">
+                                <table width="70" align="left" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td height="70" style="padding: 0 20px 20px 0;">
+                                            <img style="height: auto;" src="https://gallery.mailchimp.com/e348220cdbefe0755a59e3be0/images/34f00adf-3b93-471a-a745-e1795deaac9f.png" width="70" height="70" border="0" alt="icon"/>
+                                        </td>
+                                    </tr>
+                                </table>
+                        <!--[if (gte mso 9)|(IE)]>
+                        <table width="425" align="left" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td>
+                        <![endif]-->
+                                <table align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 425px;">
+                                    <tr>
+                                        <td height="70">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td style="padding: 0 0 0 3px; font-size: 15px; color: #153643; font-family: sans-serif; letter-spacing: 10px;">CIBIOGÁS</td>
+                                                </tr>
+                                                <tr>
+                                                        <!--h1-->
+                                                    <td style="padding: 5px 0 0 0;font-size: 33px; line-height: 38px; font-weight: bold; color: #153643; font-family: sans-serif;">Biogasmap</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 30px 30px 30px 30px; border-bottom: 1px solid #f2eeed;">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td style="padding: 0 0 15px 0; font-size: 24px; line-height: 28px; font-weight: bold; color: #153643; font-family: sans-serif;">Olá, supervisor</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-size: 16px; line-height: 22px; color: #153643; font-family: sans-serif;">Parece que você acabou de realizar um registro na nossa Biblioteca Digital do CIBiogás. Se você fez, para completar o processo de registro, basta clicar no link abaixo, ou copie e cole no seu navegador.</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 30px 30px 30px 30px; border-bottom: 1px solid #f2eeed;">
+                            <!--[if (gte mso 9)|(IE)]>
+                        <table width="380" align="left" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td>
+                            <![endif]-->
+                                <table align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 425px;">
+                                    <tr>
+                                        <td>
+                                            <table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                        <!--bodycopy-->
+                                                    <td style="font-size: 16px; line-height: 22px; color: #153643; font-family: sans-serif;">
+                                                        <textarea rows="4" style="width: 100%;" readonly>https://null/biblioteca/usuario/confirma/supervisor@cibiogas.org/E8272B885580746486EE005521F8FA658EB95F0F</textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 20px 0 0 0;">
+                                                        <table bgcolor="#f58634" border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td style="text-align: center; font-size: 18px; font-family: sans-serif; font-weight: bold; padding: 0 30px 0 30px;" height="45">
+                                                                    <a type="button" style="color: #ffffff; text-decoration: none;" href="https://null/biblioteca/usuario/confirma/supervisor@cibiogas.org/E8272B885580746486EE005521F8FA658EB95F0F">Ativar conta</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 20px 30px 15px 30px;" bgcolor="#383838">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td align="center" style="font-family: sans-serif; font-size: 14px; color: #ffffff;">&reg; Centro Internacional de Enegias Renováveis - Biogás, 2017<br/></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                        <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            <![endif]-->
+        </table>
+        </td>
+        </tr>
+        </table>
+    </body>
+</html>
+2020-02-14 09:48:31 [INFO] from application in the thread application-akka.actor.default-dispatcher-7 - to: supervisor@cibiogas.org
+2020-02-14 09:51:53 [INFO] from application in the thread application-akka.actor.default-dispatcher-30 - Shutting down connection pool.
+2020-02-14 09:51:53 [INFO] from application in the thread application-akka.actor.default-dispatcher-30 - Creating Pool for datasource 'default'
+2020-02-14 09:51:53 [INFO] from play.api.db.DefaultDBApi in the thread application-akka.actor.default-dispatcher-30 - Database [default] connected at jdbc:postgresql://127.0.0.1:5432/biogasmap
+2020-02-14 09:51:56 [INFO] from play.api.Play in the thread application-akka.actor.default-dispatcher-30 - Application started (Dev)
+2020-02-14 09:51:58 [INFO] from application in the thread application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
+2020-02-14 09:51:58 [INFO] from application in the thread application-akka.actor.default-dispatcher-3 - Creating Pool for datasource 'default'
+2020-02-14 09:51:58 [INFO] from play.api.db.DefaultDBApi in the thread application-akka.actor.default-dispatcher-3 - Database [default] connected at jdbc:postgresql://127.0.0.1:5432/biogasmap
+2020-02-14 09:51:58 [INFO] from play.api.Play in the thread application-akka.actor.default-dispatcher-3 - Application started (Dev)
+2020-02-14 09:52:42 [INFO] from application in the thread application-akka.actor.default-dispatcher-12 - mock implementation, send email
+2020-02-14 09:52:42 [INFO] from application in the thread application-akka.actor.default-dispatcher-12 - subject: Biogasmap - Confirme seu email
+2020-02-14 09:52:42 [INFO] from application in the thread application-akka.actor.default-dispatcher-12 - from: Biogasmap CIBiogás <biblioteca@cibiogas.org>
+2020-02-14 09:52:42 [INFO] from application in the thread application-akka.actor.default-dispatcher-12 - bodyHtml: 
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Biogasmap - CIBIOGÁS</title>
+    </head>
+    <body style="margin: 0; padding: 0; min-width: 100%!important;" bgcolor="#f6f8f1">
+        <table width="100%" bgcolor="#f6f8f1" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td>
+                        <!--[if (gte mso 9)|(IE)]>
+            <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td>
+                      <![endif]-->
+                    <table bgcolor="#ffffff" style="width: 100%; max-width: 600px;" align="center" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td bgcolor="#cfd8dc" style="padding: 40px 30px 20px 30px">
+                                <table width="70" align="left" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td height="70" style="padding: 0 20px 20px 0;">
+                                            <img style="height: auto;" src="https://gallery.mailchimp.com/e348220cdbefe0755a59e3be0/images/34f00adf-3b93-471a-a745-e1795deaac9f.png" width="70" height="70" border="0" alt="icon"/>
+                                        </td>
+                                    </tr>
+                                </table>
+                        <!--[if (gte mso 9)|(IE)]>
+                        <table width="425" align="left" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td>
+                        <![endif]-->
+                                <table align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 425px;">
+                                    <tr>
+                                        <td height="70">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td style="padding: 0 0 0 3px; font-size: 15px; color: #153643; font-family: sans-serif; letter-spacing: 10px;">CIBIOGÁS</td>
+                                                </tr>
+                                                <tr>
+                                                        <!--h1-->
+                                                    <td style="padding: 5px 0 0 0;font-size: 33px; line-height: 38px; font-weight: bold; color: #153643; font-family: sans-serif;">Biogasmap</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 30px 30px 30px 30px; border-bottom: 1px solid #f2eeed;">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td style="padding: 0 0 15px 0; font-size: 24px; line-height: 28px; font-weight: bold; color: #153643; font-family: sans-serif;">Olá, supervisor</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-size: 16px; line-height: 22px; color: #153643; font-family: sans-serif;">Parece que você acabou de realizar um registro na nossa Biblioteca Digital do CIBiogás. Se você fez, para completar o processo de registro, basta clicar no link abaixo, ou copie e cole no seu navegador.</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 30px 30px 30px 30px; border-bottom: 1px solid #f2eeed;">
+                            <!--[if (gte mso 9)|(IE)]>
+                        <table width="380" align="left" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td>
+                            <![endif]-->
+                                <table align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 425px;">
+                                    <tr>
+                                        <td>
+                                            <table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                        <!--bodycopy-->
+                                                    <td style="font-size: 16px; line-height: 22px; color: #153643; font-family: sans-serif;">
+                                                        <textarea rows="4" style="width: 100%;" readonly>https://null/biblioteca/usuario/confirma/supervisor@cibiogas.org/7C475475EAF9D5080DEAFDB1936E9764875F89E0</textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 20px 0 0 0;">
+                                                        <table bgcolor="#f58634" border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td style="text-align: center; font-size: 18px; font-family: sans-serif; font-weight: bold; padding: 0 30px 0 30px;" height="45">
+                                                                    <a type="button" style="color: #ffffff; text-decoration: none;" href="https://null/biblioteca/usuario/confirma/supervisor@cibiogas.org/7C475475EAF9D5080DEAFDB1936E9764875F89E0">Ativar conta</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 20px 30px 15px 30px;" bgcolor="#383838">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td align="center" style="font-family: sans-serif; font-size: 14px; color: #ffffff;">&reg; Centro Internacional de Enegias Renováveis - Biogás, 2017<br/></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                        <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            <![endif]-->
+        </table>
+        </td>
+        </tr>
+        </table>
+    </body>
+</html>
+2020-02-14 09:52:42 [INFO] from application in the thread application-akka.actor.default-dispatcher-12 - to: supervisor@cibiogas.org
+2020-02-14 09:57:33 [INFO] from application in the thread application-akka.actor.default-dispatcher-27 - Shutting down connection pool.
+2020-02-14 09:57:33 [INFO] from application in the thread application-akka.actor.default-dispatcher-27 - Creating Pool for datasource 'default'
+2020-02-14 09:57:33 [INFO] from play.api.db.DefaultDBApi in the thread application-akka.actor.default-dispatcher-27 - Database [default] connected at jdbc:postgresql://127.0.0.1:5432/biogasmap
+2020-02-14 09:57:33 [INFO] from play.api.Play in the thread application-akka.actor.default-dispatcher-27 - Application started (Dev)
+2020-02-14 09:57:59 [INFO] from application in the thread application-akka.actor.default-dispatcher-5 - Shutting down connection pool.
+2020-02-14 09:57:59 [INFO] from application in the thread application-akka.actor.default-dispatcher-5 - Creating Pool for datasource 'default'
+2020-02-14 09:57:59 [INFO] from play.api.db.DefaultDBApi in the thread application-akka.actor.default-dispatcher-5 - Database [default] connected at jdbc:postgresql://127.0.0.1:5432/biogasmap
+2020-02-14 09:58:03 [INFO] from play.api.Play in the thread application-akka.actor.default-dispatcher-5 - Application started (Dev)
+2020-02-14 09:58:04 [INFO] from application in the thread application-akka.actor.default-dispatcher-4 - Shutting down connection pool.
+2020-02-14 09:58:04 [INFO] from application in the thread application-akka.actor.default-dispatcher-4 - Creating Pool for datasource 'default'
+2020-02-14 09:58:04 [INFO] from play.api.db.DefaultDBApi in the thread application-akka.actor.default-dispatcher-4 - Database [default] connected at jdbc:postgresql://127.0.0.1:5432/biogasmap
+2020-02-14 09:58:04 [INFO] from play.api.Play in the thread application-akka.actor.default-dispatcher-4 - Application started (Dev)
+2020-02-14 09:58:57 [INFO] from application in the thread application-akka.actor.default-dispatcher-10 - mock implementation, send email
+2020-02-14 09:58:57 [INFO] from application in the thread application-akka.actor.default-dispatcher-10 - subject: Biogasmap - Confirme seu email
+2020-02-14 09:58:57 [INFO] from application in the thread application-akka.actor.default-dispatcher-10 - from: Biogasmap CIBiogás <biblioteca@cibiogas.org>
+2020-02-14 09:58:57 [INFO] from application in the thread application-akka.actor.default-dispatcher-10 - bodyHtml: 
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Biogasmap - CIBIOGÁS</title>
+    </head>
+    <body style="margin: 0; padding: 0; min-width: 100%!important;" bgcolor="#f6f8f1">
+        <table width="100%" bgcolor="#f6f8f1" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td>
+                        <!--[if (gte mso 9)|(IE)]>
+            <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td>
+                      <![endif]-->
+                    <table bgcolor="#ffffff" style="width: 100%; max-width: 600px;" align="center" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td bgcolor="#cfd8dc" style="padding: 40px 30px 20px 30px">
+                                <table width="70" align="left" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td height="70" style="padding: 0 20px 20px 0;">
+                                            <img style="height: auto;" src="https://gallery.mailchimp.com/e348220cdbefe0755a59e3be0/images/34f00adf-3b93-471a-a745-e1795deaac9f.png" width="70" height="70" border="0" alt="icon"/>
+                                        </td>
+                                    </tr>
+                                </table>
+                        <!--[if (gte mso 9)|(IE)]>
+                        <table width="425" align="left" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td>
+                        <![endif]-->
+                                <table align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 425px;">
+                                    <tr>
+                                        <td height="70">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td style="padding: 0 0 0 3px; font-size: 15px; color: #153643; font-family: sans-serif; letter-spacing: 10px;">CIBIOGÁS</td>
+                                                </tr>
+                                                <tr>
+                                                        <!--h1-->
+                                                    <td style="padding: 5px 0 0 0;font-size: 33px; line-height: 38px; font-weight: bold; color: #153643; font-family: sans-serif;">Biogasmap</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 30px 30px 30px 30px; border-bottom: 1px solid #f2eeed;">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td style="padding: 0 0 15px 0; font-size: 24px; line-height: 28px; font-weight: bold; color: #153643; font-family: sans-serif;">Olá, supervisor</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-size: 16px; line-height: 22px; color: #153643; font-family: sans-serif;">Parece que você acabou de realizar um registro na nossa Biblioteca Digital do CIBiogás. Se você fez, para completar o processo de registro, basta clicar no link abaixo, ou copie e cole no seu navegador.</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 30px 30px 30px 30px; border-bottom: 1px solid #f2eeed;">
+                            <!--[if (gte mso 9)|(IE)]>
+                        <table width="380" align="left" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td>
+                            <![endif]-->
+                                <table align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 425px;">
+                                    <tr>
+                                        <td>
+                                            <table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                        <!--bodycopy-->
+                                                    <td style="font-size: 16px; line-height: 22px; color: #153643; font-family: sans-serif;">
+                                                        <textarea rows="4" style="width: 100%;" readonly>https://null/biblioteca/usuario/confirma/supervisor@cibiogas.org/F5F87601E21349589373D4228F0B99D241E67A81</textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 20px 0 0 0;">
+                                                        <table bgcolor="#f58634" border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td style="text-align: center; font-size: 18px; font-family: sans-serif; font-weight: bold; padding: 0 30px 0 30px;" height="45">
+                                                                    <a type="button" style="color: #ffffff; text-decoration: none;" href="https://null/biblioteca/usuario/confirma/supervisor@cibiogas.org/F5F87601E21349589373D4228F0B99D241E67A81">Ativar conta</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 20px 30px 15px 30px;" bgcolor="#383838">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td align="center" style="font-family: sans-serif; font-size: 14px; color: #ffffff;">&reg; Centro Internacional de Enegias Renováveis - Biogás, 2017<br/></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                        <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            <![endif]-->
+        </table>
+        </td>
+        </tr>
+        </table>
+    </body>
+</html>
+2020-02-14 09:58:57 [INFO] from application in the thread application-akka.actor.default-dispatcher-10 - to: supervisor@cibiogas.org

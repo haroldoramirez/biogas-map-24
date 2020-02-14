@@ -68,7 +68,7 @@ Seq[Any](format.raw/*1.81*/("""
 object datetimePickerDataFim extends datetimePickerDataFim_Scope0.datetimePickerDataFim
               /*
                   -- GENERATED --
-                  DATE: Thu Feb 13 17:18:26 BRT 2020
+                  DATE: Fri Feb 14 09:36:48 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/templates/bootstrap/datetimePickerDataFim.scala.html
                   HASH: ff739c55cafef92d57ccdc544d042a268d7f555e
                   MATRIX: 817->1|991->80|1019->82|1069->106|1096->125|1135->127|1175->137|1221->157|1234->162|1257->165|1317->199|1342->204|1370->205|1509->318|1522->323|1545->326|1614->369|1627->374|1650->377|1802->502|1816->507|1842->512|1901->544|1933->555|1986->581|2000->586|2041->606|2230->768|2295->812

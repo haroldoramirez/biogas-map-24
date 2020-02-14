@@ -153,6 +153,7 @@ create table usuario (
   nome                          varchar(255),
   email                         varchar(255),
   senha                         varchar(255),
+  senha2                        varchar(255),
   verificado                    boolean,
   confirmacao_token             varchar(255),
   papel                         varchar(13),

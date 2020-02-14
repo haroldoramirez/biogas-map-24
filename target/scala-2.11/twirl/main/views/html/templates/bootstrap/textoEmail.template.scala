@@ -63,7 +63,7 @@ Seq[Any](format.raw/*1.81*/("""
 object textoEmail extends textoEmail_Scope0.textoEmail
               /*
                   -- GENERATED --
-                  DATE: Thu Feb 13 17:18:24 BRT 2020
+                  DATE: Fri Feb 14 09:36:48 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/templates/bootstrap/textoEmail.scala.html
                   HASH: c1a26dca58d47b1241f14d085d96bf0834d843cf
                   MATRIX: 795->1|969->80|997->82|1047->106|1074->125|1113->127|1153->137|1199->157|1212->162|1235->165|1295->199|1320->204|1348->205|1514->345|1527->350|1550->353|1593->370|1606->375|1631->380|1703->425|1717->430|1758->450|1809->474|1841->485|1906->523|1971->567

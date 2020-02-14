@@ -79,7 +79,7 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 object logout extends logout_Scope0.logout
               /*
                   -- GENERATED --
-                  DATE: Fri Feb 14 09:16:57 BRT 2020
+                  DATE: Fri Feb 14 09:36:48 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/mensagens/info/logout.scala.html
                   HASH: a156bc314c831a4be87cddefbb37cfa8852ba445
                   MATRIX: 844->0|1114->244|1128->250|1188->289|1266->341|1280->347|1375->421|1453->473|1467->479|1544->535|1880->844|1895->850|1934->868|2371->1277|2414->1298

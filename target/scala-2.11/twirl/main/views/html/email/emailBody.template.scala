@@ -102,7 +102,7 @@ Seq[Any](format.raw/*1.19*/("""
 object emailBody extends emailBody_Scope0.emailBody
               /*
                   -- GENERATED --
-                  DATE: Fri Feb 14 09:16:57 BRT 2020
+                  DATE: Fri Feb 14 09:36:48 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/email/emailBody.scala.html
                   HASH: fb28160ead778f345d7ced054dcc641dcb3a8dbf
                   MATRIX: 760->1|872->18|899->19|1493->585|1546->616|2458->1500|2501->1521|2532->1524|2549->1531|2579->1539|2844->1777|2908->1820|2969->1853|3000->1857|3038->1874|3071->1880|3087->1887|3117->1896|3189->1941|3239->1970|3272->1976|3288->1983|3318->1992|3777->2424|3818->2444|3852->2451|3895->2472

@@ -70,7 +70,7 @@ Seq[Any](format.raw/*1.81*/("""
 object arquivopdfvalido extends arquivopdfvalido_Scope0.arquivopdfvalido
               /*
                   -- GENERATED --
-                  DATE: Thu Feb 13 17:18:26 BRT 2020
+                  DATE: Fri Feb 14 09:36:48 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/templates/bootstrap/arquivopdfvalido.scala.html
                   HASH: f6bdaa850cfa6913b0d4567a7f0c27df9df51a4e
                   MATRIX: 807->1|981->80|1009->82|1059->106|1086->125|1125->127|1165->137|1211->157|1224->162|1247->165|1307->199|1332->204|1360->205|1728->546|1742->551|1766->554|1854->615|1868->620|1894->625|2245->949|2310->993

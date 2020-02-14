@@ -66,7 +66,7 @@ Seq[Any](format.raw/*1.81*/("""
 object arquivopdf extends arquivopdf_Scope0.arquivopdf
               /*
                   -- GENERATED --
-                  DATE: Thu Feb 13 17:18:26 BRT 2020
+                  DATE: Fri Feb 14 09:36:48 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/templates/bootstrap/arquivopdf.scala.html
                   HASH: 11193f8ace77b3afb01a1ab2c4c3438d2a4d008e
                   MATRIX: 795->1|969->80|997->82|1047->106|1074->125|1113->127|1153->137|1199->157|1212->162|1235->165|1295->199|1320->204|1348->205|1716->546|1730->551|1754->554|1842->615|1856->620|1882->625

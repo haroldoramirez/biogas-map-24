@@ -49,7 +49,7 @@ Seq[Any]()
 object emailResponsive extends emailResponsive_Scope0.emailResponsive
               /*
                   -- GENERATED --
-                  DATE: Fri Feb 14 09:16:57 BRT 2020
+                  DATE: Fri Feb 14 09:36:48 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/email/emailResponsive.scala.html
                   HASH: e94f0e7e3a8e37ec60eab0ac82dcd00f3b57543c
                   MATRIX: 764->1

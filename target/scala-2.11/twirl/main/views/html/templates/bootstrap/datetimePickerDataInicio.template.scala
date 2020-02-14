@@ -67,7 +67,7 @@ Seq[Any](format.raw/*1.81*/("""
 object datetimePickerDataInicio extends datetimePickerDataInicio_Scope0.datetimePickerDataInicio
               /*
                   -- GENERATED --
-                  DATE: Thu Feb 13 17:18:26 BRT 2020
+                  DATE: Fri Feb 14 09:36:48 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/templates/bootstrap/datetimePickerDataInicio.scala.html
                   HASH: 79bc00ad0e2ebda935d2d6c03fd028e9a46b1046
                   MATRIX: 823->1|997->80|1025->82|1075->106|1102->125|1141->127|1181->137|1227->157|1240->162|1263->165|1323->199|1348->204|1376->205|1515->318|1528->323|1551->326|1620->369|1633->374|1656->377|1808->502|1822->507|1848->512|1907->544|1939->555|1992->581|2006->586|2047->606|2236->768|2301->812

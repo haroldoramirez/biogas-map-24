@@ -57,7 +57,7 @@ Seq[Any](format.raw/*1.81*/("""
 object multiarquivo extends multiarquivo_Scope0.multiarquivo
               /*
                   -- GENERATED --
-                  DATE: Thu Feb 13 17:18:26 BRT 2020
+                  DATE: Fri Feb 14 09:36:48 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/templates/bootstrap/multiarquivo.scala.html
                   HASH: e4a251786ab113d691c890a1ef2eff0b92ce42d0
                   MATRIX: 799->1|973->80|1001->82|1051->106|1078->125|1117->127|1157->137|1203->157|1216->162|1239->165|1299->199|1324->204|1352->205|1468->295|1481->300|1504->303|1551->324|1564->329|1589->334|1705->424|1769->468

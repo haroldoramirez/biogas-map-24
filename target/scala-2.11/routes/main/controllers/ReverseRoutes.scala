@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/haroldo/projetos/biogas-map-24/conf/routes
-// @DATE:Fri Feb 14 09:21:13 BRT 2020
+// @DATE:Fri Feb 14 09:36:48 BRT 2020
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }

@@ -62,7 +62,7 @@ Seq[Any](format.raw/*1.81*/("""
 object numero extends numero_Scope0.numero
               /*
                   -- GENERATED --
-                  DATE: Thu Feb 13 17:18:26 BRT 2020
+                  DATE: Fri Feb 14 09:36:48 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/templates/bootstrap/numero.scala.html
                   HASH: 2ce4d3eff674547c536e3c62b5970d7350893bb7
                   MATRIX: 787->1|961->80|989->82|1039->106|1066->125|1105->127|1145->137|1191->157|1204->162|1227->165|1287->199|1312->204|1453->319|1466->324|1489->327|1536->348|1549->353|1574->358|1623->380|1637->385|1678->405|1733->433|1765->444|1830->482|1895->526

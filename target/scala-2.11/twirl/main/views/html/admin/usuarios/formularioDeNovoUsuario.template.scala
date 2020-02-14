@@ -59,7 +59,7 @@ Seq[Any](format.raw/*1.39*/("""
 object formularioDeNovoUsuario extends formularioDeNovoUsuario_Scope0.formularioDeNovoUsuario
               /*
                   -- GENERATED --
-                  DATE: Thu Feb 13 16:58:29 BRT 2020
+                  DATE: Fri Feb 14 09:36:49 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/admin/usuarios/formularioDeNovoUsuario.scala.html
                   HASH: a7093082b7b7989a1194914435a3e81d00bf178a
                   MATRIX: 813->1|981->38|1009->78|1040->84|1049->86|1105->134|1144->136|1179->145|1235->175|1245->177|1309->221|1345->231|1355->233|1422->280|1458->290|1468->292|1538->342|1575->352|1586->354|1680->427|1717->437|1728->439|1773->475|1813->477|1842->478|1884->489

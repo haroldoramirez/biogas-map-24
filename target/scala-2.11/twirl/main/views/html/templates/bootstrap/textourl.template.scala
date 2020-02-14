@@ -68,7 +68,7 @@ Seq[Any](format.raw/*1.81*/("""
 object textourl extends textourl_Scope0.textourl
               /*
                   -- GENERATED --
-                  DATE: Thu Feb 13 17:18:24 BRT 2020
+                  DATE: Fri Feb 14 09:36:48 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/templates/bootstrap/textourl.scala.html
                   HASH: 80b5841d9ca17a2f2a92793e3be5504306e614fd
                   MATRIX: 791->1|965->80|993->82|1043->106|1070->125|1109->127|1149->137|1195->157|1208->162|1231->165|1291->199|1316->204|1344->205|1586->421|1599->426|1622->429|1715->495|1729->500|1755->505|1811->534|1825->539|1866->559|1921->587|1953->598|2214->832|2279->876

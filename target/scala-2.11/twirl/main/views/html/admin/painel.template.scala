@@ -165,7 +165,7 @@ Seq[Any](format.raw/*3.20*/("""
 object painel extends painel_Scope0.painel_Scope1.painel
               /*
                   -- GENERATED --
-                  DATE: Thu Feb 13 16:58:29 BRT 2020
+                  DATE: Fri Feb 14 09:36:48 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/admin/painel.scala.html
                   HASH: fb719f76b5df3f9d42aa3e6115155f9810c03b7a
                   MATRIX: 812->32|925->50|953->53|1005->97|1044->99|1076->105|1263->265|1278->271|1324->296|1618->580|1650->585|2537->1463|2569->1468|3451->2337|3483->2342|4370->3216|4402->3221

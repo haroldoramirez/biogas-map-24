@@ -63,7 +63,7 @@ Seq[Any](format.raw/*1.81*/("""
 object texto extends texto_Scope0.texto
               /*
                   -- GENERATED --
-                  DATE: Thu Feb 13 17:18:24 BRT 2020
+                  DATE: Fri Feb 14 09:36:48 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/templates/bootstrap/texto.scala.html
                   HASH: a4f87f03456a6974cdc53425f53f57024ab94632
                   MATRIX: 785->1|959->80|987->82|1037->106|1064->125|1103->127|1143->137|1189->157|1202->162|1225->165|1285->199|1310->204|1338->205|1518->359|1531->364|1554->367|1639->425|1653->430|1679->435|1731->460|1745->465|1786->485|1844->516|1876->527|1948->572|2013->616

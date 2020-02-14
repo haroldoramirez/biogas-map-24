@@ -81,7 +81,7 @@ Seq[Any](format.raw/*1.40*/("""
 object mensagens extends mensagens_Scope0.mensagens
               /*
                   -- GENERATED --
-                  DATE: Thu Feb 13 17:21:19 BRT 2020
+                  DATE: Fri Feb 14 09:36:48 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/mensagens/categoria/mensagens.scala.html
                   HASH: 7832419d1cc17acbef4bfe1ee461703c49421ef9
                   MATRIX: 780->1|913->39|940->40|1230->304|1244->310|1304->349|1386->405|1400->411|1495->485|1578->541|1593->547|1671->603|1717->622|1759->643|1788->644|1818->647|1869->677|2081->862|2114->874|2248->981|2263->987|2316->1019|2474->1150|2531->1185|2588->1214|2673->1272|2724->1302|2881->1432|2914->1444|2943->1445|2984->1459|3013->1467|3206->1632|3249->1653

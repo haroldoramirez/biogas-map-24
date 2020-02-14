@@ -62,7 +62,7 @@ Seq[Any](format.raw/*1.42*/("""
 object nome extends nome_Scope0.nome
               /*
                   -- GENERATED --
-                  DATE: Thu Feb 13 17:18:26 BRT 2020
+                  DATE: Fri Feb 14 09:36:48 BRT 2020
                   SOURCE: /home/haroldo/projetos/biogas-map-24/app/views/templates/bootstrap/nome.scala.html
                   HASH: 8a3a864057cc4ff4d88a891f0b04dacac8308178
                   MATRIX: 769->1|904->41|932->43|982->67|1009->86|1048->88|1088->98|1234->218|1247->223|1270->226|1310->239|1324->244|1350->249|1391->263|1405->268|1446->288|1493->308|1525->319|1597->364|1662->408
